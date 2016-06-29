@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  HomeTabBarController.h
 //  etonkids
 //
 //  Created by weineeL on 16/6/29.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface HomeTabBarController : UITabBarController
 
 @end
-

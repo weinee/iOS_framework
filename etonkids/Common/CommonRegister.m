@@ -56,6 +56,7 @@ static CommonRegister *sharedRegister;
 	[DDLog addLogger:[DDTTYLogger sharedInstance]];
 	[[DDTTYLogger sharedInstance] setColorsEnabled:YES];
 	[[DDTTYLogger sharedInstance] setForegroundColor:[UIColor whiteColor]  backgroundColor:[UIColor blackColor] forFlag:DDLogFlagDebug];
+	[[DDTTYLogger sharedInstance] setForegroundColor:[UIColor blueColor]  backgroundColor:[UIColor whiteColor] forFlag:DDLogFlagDebug];
 	
 	[DDLog addLogger:[DDASLLogger sharedInstance]];
 	

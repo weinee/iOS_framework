@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		356C9D38C01DAB66F0F71CD4 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5784CECF1109BBFB411939E7 /* Pods.framework */; };
+		BAB992461D23DEA600B6CA2E /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB992411D23DEA600B6CA2E /* Login.storyboard */; };
+		BAB992471D23DEA600B6CA2E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB992431D23DEA600B6CA2E /* LoginViewController.m */; };
+		BAB992481D23DEA600B6CA2E /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB992451D23DEA600B6CA2E /* RegistViewController.m */; };
+		BAB9924C1D23E06B00B6CA2E /* ForgetPwdNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB9924B1D23E06B00B6CA2E /* ForgetPwdNavigationController.m */; };
 		BAF95BC91D238C6E0089FB89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95BC81D238C6E0089FB89 /* main.m */; };
 		BAF95BD41D238C6E0089FB89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF95BD31D238C6E0089FB89 /* Assets.xcassets */; };
 		BAF95BD71D238C6E0089FB89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF95BD51D238C6E0089FB89 /* LaunchScreen.storyboard */; };
@@ -17,8 +21,6 @@
 		BAF95C141D2398B80089FB89 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95C111D2398B80089FB89 /* BaseNavigationViewController.m */; };
 		BAF95C151D2398B80089FB89 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95C131D2398B80089FB89 /* BaseViewController.m */; };
 		BAF95C191D2398BF0089FB89 /* CommonRegister.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95C181D2398BF0089FB89 /* CommonRegister.m */; };
-		BAF95C201D2398CD0089FB89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95C1F1D2398CD0089FB89 /* ViewController.m */; };
-		BAF95C241D2398FB0089FB89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF95C221D2398FB0089FB89 /* Main.storyboard */; };
 		BAF95D241D239C460089FB89 /* AuthcodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95C4B1D239C460089FB89 /* AuthcodeView.m */; };
 		BAF95D261D239C460089FB89 /* CommonTools.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95C4F1D239C460089FB89 /* CommonTools.m */; };
 		BAF95D271D239C460089FB89 /* CXAlertBackgroundWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95C521D239C460089FB89 /* CXAlertBackgroundWindow.m */; };
@@ -130,6 +132,9 @@
 		BAF95E2D1D23B18F0089FB89 /* UIScrollView+ScalableCover.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95E181D23B18F0089FB89 /* UIScrollView+ScalableCover.m */; };
 		BAF95E2E1D23B18F0089FB89 /* UIView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95E1A1D23B18F0089FB89 /* UIView+Util.m */; };
 		BAF95E2F1D23B18F0089FB89 /* UIViewController+Segue.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95E1C1D23B18F0089FB89 /* UIViewController+Segue.m */; };
+		BAF95E341D23C4410089FB89 /* HomeTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95E331D23C4410089FB89 /* HomeTabBarController.m */; };
+		BAF95E381D23C5310089FB89 /* HomeTabBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95E371D23C5310089FB89 /* HomeTabBarView.m */; };
+		BAF95E431D23DA1E0089FB89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF95E411D23DA1E0089FB89 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -152,6 +157,13 @@
 /* Begin PBXFileReference section */
 		5784CECF1109BBFB411939E7 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74090FC854A8BD6C146DE09E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		BAB992411D23DEA600B6CA2E /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BAB992421D23DEA600B6CA2E /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		BAB992431D23DEA600B6CA2E /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		BAB992441D23DEA600B6CA2E /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		BAB992451D23DEA600B6CA2E /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		BAB9924A1D23E06B00B6CA2E /* ForgetPwdNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPwdNavigationController.h; sourceTree = "<group>"; };
+		BAB9924B1D23E06B00B6CA2E /* ForgetPwdNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPwdNavigationController.m; sourceTree = "<group>"; };
 		BAF95BC41D238C6E0089FB89 /* etonkids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = etonkids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF95BC81D238C6E0089FB89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAF95BD31D238C6E0089FB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -173,9 +185,6 @@
 		BAF95C181D2398BF0089FB89 /* CommonRegister.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonRegister.m; sourceTree = "<group>"; };
 		BAF95C1B1D2398C40089FB89 /* Etonkids.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Etonkids.pch; sourceTree = "<group>"; };
 		BAF95C1C1D2398C40089FB89 /* Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
-		BAF95C1E1D2398CD0089FB89 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BAF95C1F1D2398CD0089FB89 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BAF95C231D2398FB0089FB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BAF95C4A1D239C460089FB89 /* AuthcodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthcodeView.h; sourceTree = "<group>"; };
 		BAF95C4B1D239C460089FB89 /* AuthcodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthcodeView.m; sourceTree = "<group>"; };
 		BAF95C4E1D239C460089FB89 /* CommonTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonTools.h; sourceTree = "<group>"; };
@@ -384,6 +393,11 @@
 		BAF95E1A1D23B18F0089FB89 /* UIView+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Util.m"; sourceTree = "<group>"; };
 		BAF95E1B1D23B18F0089FB89 /* UIViewController+Segue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Segue.h"; sourceTree = "<group>"; };
 		BAF95E1C1D23B18F0089FB89 /* UIViewController+Segue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Segue.m"; sourceTree = "<group>"; };
+		BAF95E321D23C4410089FB89 /* HomeTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTabBarController.h; sourceTree = "<group>"; };
+		BAF95E331D23C4410089FB89 /* HomeTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTabBarController.m; sourceTree = "<group>"; };
+		BAF95E361D23C5310089FB89 /* HomeTabBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTabBarView.h; sourceTree = "<group>"; };
+		BAF95E371D23C5310089FB89 /* HomeTabBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTabBarView.m; sourceTree = "<group>"; };
+		BAF95E421D23DA1E0089FB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = etonkids/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCF978A911027753E3CB6591 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -431,6 +445,28 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BAB992401D23DEA600B6CA2E /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BAB992411D23DEA600B6CA2E /* Login.storyboard */,
+				BAB992491D23DEAA00B6CA2E /* SubViewController */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BAB992491D23DEAA00B6CA2E /* SubViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BAB992421D23DEA600B6CA2E /* LoginViewController.h */,
+				BAB992431D23DEA600B6CA2E /* LoginViewController.m */,
+				BAB992441D23DEA600B6CA2E /* RegistViewController.h */,
+				BAB992451D23DEA600B6CA2E /* RegistViewController.m */,
+				BAB9924A1D23E06B00B6CA2E /* ForgetPwdNavigationController.h */,
+				BAB9924B1D23E06B00B6CA2E /* ForgetPwdNavigationController.m */,
+			);
+			name = SubViewController;
+			sourceTree = "<group>";
+		};
 		BAF95BBB1D238C6D0089FB89 = {
 			isa = PBXGroup;
 			children = (
@@ -461,10 +497,9 @@
 				BAF95C0F1D2398B80089FB89 /* BaseClass */,
 				BAF95C211D2398D40089FB89 /* Tools */,
 				BAF95C1D1D2398CD0089FB89 /* Modules */,
-				BAF95C0B1D2398B00089FB89 /* application */,
+				BAF95C0B1D2398B00089FB89 /* Application */,
+				BAF95E391D23C6CB0089FB89 /* BaseStoryboard */,
 				BAF95BD31D238C6E0089FB89 /* Assets.xcassets */,
-				BAF95BD51D238C6E0089FB89 /* LaunchScreen.storyboard */,
-				BAF95C221D2398FB0089FB89 /* Main.storyboard */,
 				BAF95BD81D238C6E0089FB89 /* Info.plist */,
 				BAF95BC71D238C6E0089FB89 /* Supporting Files */,
 			);
@@ -498,22 +533,26 @@
 			path = etonkidsUITests;
 			sourceTree = "<group>";
 		};
-		BAF95C0B1D2398B00089FB89 /* application */ = {
+		BAF95C0B1D2398B00089FB89 /* Application */ = {
 			isa = PBXGroup;
 			children = (
 				BAF95C0C1D2398B00089FB89 /* AppDelegate.h */,
 				BAF95C0D1D2398B00089FB89 /* AppDelegate.m */,
 			);
+			name = Application;
 			path = application;
 			sourceTree = "<group>";
 		};
 		BAF95C0F1D2398B80089FB89 /* BaseClass */ = {
 			isa = PBXGroup;
 			children = (
+				BAF95E351D23C5250089FB89 /* View */,
 				BAF95C101D2398B80089FB89 /* BaseNavigationViewController.h */,
 				BAF95C111D2398B80089FB89 /* BaseNavigationViewController.m */,
 				BAF95C121D2398B80089FB89 /* BaseViewController.h */,
 				BAF95C131D2398B80089FB89 /* BaseViewController.m */,
+				BAF95E321D23C4410089FB89 /* HomeTabBarController.h */,
+				BAF95E331D23C4410089FB89 /* HomeTabBarController.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -540,8 +579,7 @@
 		BAF95C1D1D2398CD0089FB89 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				BAF95C1E1D2398CD0089FB89 /* ViewController.h */,
-				BAF95C1F1D2398CD0089FB89 /* ViewController.m */,
+				BAB992401D23DEA600B6CA2E /* Login */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -1153,6 +1191,25 @@
 			path = FontAwesome;
 			sourceTree = "<group>";
 		};
+		BAF95E351D23C5250089FB89 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BAF95E361D23C5310089FB89 /* HomeTabBarView.h */,
+				BAF95E371D23C5310089FB89 /* HomeTabBarView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BAF95E391D23C6CB0089FB89 /* BaseStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				BAF95BD51D238C6E0089FB89 /* LaunchScreen.storyboard */,
+				BAF95E411D23DA1E0089FB89 /* Main.storyboard */,
+			);
+			name = BaseStoryboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1259,14 +1316,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF95E431D23DA1E0089FB89 /* Main.storyboard in Resources */,
 				BAF95D3C1D239C460089FB89 /* MLEmoji_Expression.plist in Resources */,
-				BAF95C241D2398FB0089FB89 /* Main.storyboard in Resources */,
 				BAF95DD01D23A7320089FB89 /* btn_selected@3x.png in Resources */,
 				BAF95D3B1D239C460089FB89 /* MLEmoji_Expression.bundle in Resources */,
 				BAF95DD11D23A7320089FB89 /* btn_unselected.png in Resources */,
 				BAF95DDA1D23A7320089FB89 /* ZLNoAuthorityViewController.xib in Resources */,
 				BAF95DC81D23A7320089FB89 /* ZLBigImageCell.xib in Resources */,
 				BAF95DCF1D23A7320089FB89 /* btn_selected@2x.png in Resources */,
+				BAB992461D23DEA600B6CA2E /* Login.storyboard in Resources */,
 				BAF95DCA1D23A7320089FB89 /* ZLCollectionCell.xib in Resources */,
 				BAF95DD61D23A7320089FB89 /* navBackBtn@2x.png in Resources */,
 				BAF95D491D239C460089FB89 /* LICENSE in Resources */,
@@ -1356,12 +1414,13 @@
 			files = (
 				BAF95D391D239C460089FB89 /* MBProgressHUD+CustomAdditions.m in Sources */,
 				BAF95D751D239C460089FB89 /* TreeTableView.m in Sources */,
+				BAF95E341D23C4410089FB89 /* HomeTabBarController.m in Sources */,
 				BAF95DCB1D23A7320089FB89 /* ZLPhotoBrowserCell.m in Sources */,
 				BAF95DD91D23A7320089FB89 /* ZLNoAuthorityViewController.m in Sources */,
-				BAF95C201D2398CD0089FB89 /* ViewController.m in Sources */,
 				BAF95D311D239C460089FB89 /* CXTabIndicatorView.m in Sources */,
 				BAF95DC71D23A7320089FB89 /* ZLBigImageCell.m in Sources */,
 				BAF95E221D23B18F0089FB89 /* NSDate+Util.m in Sources */,
+				BAF95E381D23C5310089FB89 /* HomeTabBarView.m in Sources */,
 				BAF95C0E1D2398B00089FB89 /* AppDelegate.m in Sources */,
 				BAF95DDF1D23A7320089FB89 /* ZLSelectPhotoModel.m in Sources */,
 				BAF95D241D239C460089FB89 /* AuthcodeView.m in Sources */,
@@ -1403,7 +1462,9 @@
 				BAF95D6D1D239C460089FB89 /* SDBrowserImageView.m in Sources */,
 				BAF95D261D239C460089FB89 /* CommonTools.m in Sources */,
 				BAF95E1D1D23B18F0089FB89 /* FAImageView.m in Sources */,
+				BAB992481D23DEA600B6CA2E /* RegistViewController.m in Sources */,
 				BAF95D2F1D239C460089FB89 /* CXDurationPickerView.m in Sources */,
+				BAB9924C1D23E06B00B6CA2E /* ForgetPwdNavigationController.m in Sources */,
 				BAF95D7F1D239C460089FB89 /* VPImageCropperViewController.m in Sources */,
 				BAF95D471D239C460089FB89 /* MLLabel.m in Sources */,
 				BAF95C191D2398BF0089FB89 /* CommonRegister.m in Sources */,
@@ -1413,6 +1474,7 @@
 				BAF95E261D23B18F0089FB89 /* NSTextAttachment+Util.m in Sources */,
 				BAF95D7A1D239C460089FB89 /* UITextView+Category.m in Sources */,
 				BAF95D411D239C460089FB89 /* NSString+MLLabel.m in Sources */,
+				BAB992471D23DEA600B6CA2E /* LoginViewController.m in Sources */,
 				BAF95D7B1D239C460089FB89 /* UIView+animateTextField.m in Sources */,
 				BAF95D801D239C460089FB89 /* WNCustomKeyBoardToolView.m in Sources */,
 				BAF95DDE1D23A7320089FB89 /* ZLPhotoTool.m in Sources */,
@@ -1491,12 +1553,13 @@
 				BAF95BD61D238C6E0089FB89 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = etonkids;
 			sourceTree = "<group>";
 		};
-		BAF95C221D2398FB0089FB89 /* Main.storyboard */ = {
+		BAF95E411D23DA1E0089FB89 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				BAF95C231D2398FB0089FB89 /* Base */,
+				BAF95E421D23DA1E0089FB89 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

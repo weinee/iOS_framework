@@ -56,6 +56,10 @@
 #define kColorSeparator [UIColor colorWithRed:220/255.0 green:220/255.0 blue:220/255.0 alpha:1.0]
 //正常文字颜色
 #define kColorTextDetail [UIColor colorWithRed:112/255.0 green:112/255.0 blue:112/255.0 alpha:1.0]
+//正常文字颜色，稍深
+#define kColorTextDetailDeeper [UIColor colorWithRed:49/255.0 green:49/255.0 blue:49/255.0 alpha:1.0]
+//默认的红色
+#define kColorRed [UIColor colorWithRed:249/255.0 green:52/255.0 blue:64/255.0 alpha:1.0]
 
 //默认灰色
 #define kColorGray [UIColor colorWithRed:238/255.0 green:238/255.0 blue:238/255.0 alpha:1.0]

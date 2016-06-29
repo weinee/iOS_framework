@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xYf-e4-4Ey">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--NonLogin View Controller-->
+        <scene sceneID="0e2-6n-aGD">
+            <objects>
+                <viewController storyboardIdentifier="NonLoginViewController" id="xYf-e4-4Ey" userLabel="NonLogin View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wZK-T6-Ffa"/>
+                        <viewControllerLayoutGuide type="bottom" id="UF3-uK-Mgg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="de1-yL-HLb">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OO8-uY-2Dj">
+                                <rect key="frame" x="60" y="285" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Ihw-iH-HP9"/>
+                                    <constraint firstAttribute="width" constant="100" id="cwm-iB-AYr"/>
+                                </constraints>
+                                <state key="normal" title="立即加入"/>
+                                <connections>
+                                    <segue destination="6fN-XD-qqG" kind="presentation" id="byp-hi-Uo0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vx6-dK-S1K">
+                                <rect key="frame" x="440" y="285" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ay1-QG-0Sr"/>
+                                    <constraint firstAttribute="width" constant="100" id="m7P-E0-Zi5"/>
+                                </constraints>
+                                <state key="normal" title="登录"/>
+                                <connections>
+                                    <segue destination="MYt-kQ-pGH" kind="presentation" modalTransitionStyle="crossDissolve" id="ajg-xx-PLO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vx6-dK-S1K" firstAttribute="centerY" secondItem="OO8-uY-2Dj" secondAttribute="centerY" id="0J1-aI-sVI"/>
+                            <constraint firstItem="vx6-dK-S1K" firstAttribute="centerY" secondItem="de1-yL-HLb" secondAttribute="centerY" id="ccD-rS-L6D"/>
+                            <constraint firstItem="vx6-dK-S1K" firstAttribute="height" secondItem="OO8-uY-2Dj" secondAttribute="height" id="gJZ-gU-OBj"/>
+                            <constraint firstItem="vx6-dK-S1K" firstAttribute="width" secondItem="OO8-uY-2Dj" secondAttribute="width" id="ht3-t1-mRn"/>
+                            <constraint firstItem="OO8-uY-2Dj" firstAttribute="leading" secondItem="de1-yL-HLb" secondAttribute="leadingMargin" constant="40" id="xe6-X9-Ids"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vx6-dK-S1K" secondAttribute="trailing" constant="40" id="ydP-nQ-Uwv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="gqg-3o-7uf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ki-hu-oXh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64" y="-208"/>
+        </scene>
+        <!--Regist View Controller-->
+        <scene sceneID="TEe-2K-51G">
+            <objects>
+                <viewController storyboardIdentifier="RegistViewController" id="6fN-XD-qqG" userLabel="Regist View Controller" customClass="RegistViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sre-u7-fFn"/>
+                        <viewControllerLayoutGuide type="bottom" id="CgB-uG-2Wd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1ae-f4-jr8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqJ-Co-p0J">
+                                <rect key="frame" x="124" y="203" width="60" height="30"/>
+                                <state key="normal" title="立即加入"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeX-Uh-CVN">
+                                <rect key="frame" x="146" y="263" width="30" height="30"/>
+                                <state key="normal" title="登录"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KPQ-jf-4mg">
+                                <rect key="frame" x="246" y="44" width="30" height="30"/>
+                                <state key="normal" title="取消"/>
+                                <connections>
+                                    <action selector="cancelRegist:" destination="6fN-XD-qqG" eventType="touchUpInside" id="G9W-xk-6VQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="WFu-NQ-fmL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lCq-xd-Erm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-64" y="569"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="L2k-aB-V8T">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="MYt-kQ-pGH" userLabel="Login View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nlq-8B-Zpc"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wth-42-WRV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m1L-UI-6RR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spZ-oe-5lb">
+                                <rect key="frame" x="160" y="191" width="30" height="30"/>
+                                <state key="normal" title="登录"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spb-ws-6ow">
+                                <rect key="frame" x="26" y="264" width="60" height="30"/>
+                                <state key="normal" title="忘记密码"/>
+                                <connections>
+                                    <segue destination="Pe4-E0-h5n" kind="presentation" id="9fT-HX-f3X"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezI-ic-kAB">
+                                <rect key="frame" x="238" y="264" width="60" height="30"/>
+                                <state key="normal" title="立即加入"/>
+                                <connections>
+                                    <segue destination="6fN-XD-qqG" kind="presentation" id="831-P1-z2W"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6L5-gM-PK1"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="etP-1o-f6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="656" y="-208"/>
+        </scene>
+        <!--FGFirstStep View Controller-->
+        <scene sceneID="ACe-gq-10p">
+            <objects>
+                <viewController storyboardIdentifier="FGFirstStepViewController" id="AvB-9p-e1J" userLabel="FGFirstStep View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yMQ-SB-FNP"/>
+                        <viewControllerLayoutGuide type="bottom" id="VNQ-Zk-YGY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oAg-Ep-5HH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QTZ-iv-IG4">
+                                <rect key="frame" x="132" y="253" width="45" height="30"/>
+                                <state key="normal" title="下一步"/>
+                                <connections>
+                                    <segue destination="Xak-eC-tOX" kind="push" id="2NY-dN-3po"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cnK-wj-frd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vIP-Sz-YJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1397" y="569"/>
+        </scene>
+        <!--FGSecondStep View Controller-->
+        <scene sceneID="551-UE-Js0">
+            <objects>
+                <viewController storyboardIdentifier="FGSecondStepViewController" id="Xak-eC-tOX" userLabel="FGSecondStep View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Amp-tB-yXp"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jq2-5N-6oN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Rl-be-ChB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wor-TG-rsV">
+                                <rect key="frame" x="158" y="285" width="30" height="30"/>
+                                <state key="normal" title="提交"/>
+                                <connections>
+                                    <segue destination="Ybl-JM-0rs" kind="push" id="HmT-iI-I7g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="aBP-Pz-EXw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yGw-Ee-MUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2097" y="569"/>
+        </scene>
+        <!--FGThirdStep View Controller-->
+        <scene sceneID="848-wZ-S5d">
+            <objects>
+                <viewController storyboardIdentifier="FGThirdStepViewController" id="Ybl-JM-0rs" userLabel="FGThirdStep View Controller" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4PC-Aq-q8v"/>
+                        <viewControllerLayoutGuide type="bottom" id="iXT-qq-F2I"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CIn-9B-T56">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ou9-rY-73z">
+                                <rect key="frame" x="112" y="285" width="90" height="30"/>
+                                <state key="normal" title="完成，去登录"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="lUD-rp-q51"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6AW-Jf-k5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2790" y="569"/>
+        </scene>
+        <!--ForgetPwd Navigation Controller-->
+        <scene sceneID="9XI-NL-fc3">
+            <objects>
+                <navigationController storyboardIdentifier="ForgetPwdNaviController" id="Pe4-E0-h5n" userLabel="ForgetPwd Navigation Controller" customClass="ForgetPwdNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kpF-13-Wzp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <outlet property="navigationItem" destination="1Bf-jN-YfE" id="CvL-Am-PBK"/>
+                        <segue destination="AvB-9p-e1J" kind="relationship" relationship="rootViewController" id="im6-GC-10U"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WJ9-5u-8mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationItem title="Title" id="1Bf-jN-YfE"/>
+            </objects>
+            <point key="canvasLocation" x="1397" y="-208"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="byp-hi-Uo0"/>
+    </inferredMetricsTieBreakers>
+</document>

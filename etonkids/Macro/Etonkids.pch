@@ -24,4 +24,7 @@
 /** 三方库头文件*/
 #import "ThirdPart.h"
 
+/** 禁止使用NSLog，使用DDLogInfo, DDLogDebug, DDLogError等方法，作为分级log*/
+#define NSLog(fam, ...) DDLogInfo(fam, ##__VA_ARGS__)
+
 #endif /* PrefixHeader_pch */
