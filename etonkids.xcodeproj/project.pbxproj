@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BAF95BC91D238C6E0089FB89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95BC81D238C6E0089FB89 /* main.m */; };
+		BAF95BCC1D238C6E0089FB89 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95BCB1D238C6E0089FB89 /* AppDelegate.m */; };
+		BAF95BCF1D238C6E0089FB89 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95BCE1D238C6E0089FB89 /* ViewController.m */; };
+		BAF95BD21D238C6E0089FB89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF95BD01D238C6E0089FB89 /* Main.storyboard */; };
+		BAF95BD41D238C6E0089FB89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF95BD31D238C6E0089FB89 /* Assets.xcassets */; };
+		BAF95BD71D238C6E0089FB89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF95BD51D238C6E0089FB89 /* LaunchScreen.storyboard */; };
+		BAF95BE21D238C6E0089FB89 /* etonkidsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95BE11D238C6E0089FB89 /* etonkidsTests.m */; };
+		BAF95BED1D238C6E0089FB89 /* etonkidsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95BEC1D238C6E0089FB89 /* etonkidsUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BAF95BDE1D238C6E0089FB89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAF95BBC1D238C6D0089FB89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAF95BC31D238C6E0089FB89;
+			remoteInfo = etonkids;
+		};
+		BAF95BE91D238C6E0089FB89 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BAF95BBC1D238C6D0089FB89 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BAF95BC31D238C6E0089FB89;
+			remoteInfo = etonkids;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BAF95BC41D238C6E0089FB89 /* etonkids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = etonkids.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF95BC81D238C6E0089FB89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BAF95BCA1D238C6E0089FB89 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BAF95BCB1D238C6E0089FB89 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BAF95BCD1D238C6E0089FB89 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BAF95BCE1D238C6E0089FB89 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BAF95BD11D238C6E0089FB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BAF95BD31D238C6E0089FB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BAF95BD61D238C6E0089FB89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BAF95BD81D238C6E0089FB89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF95BDD1D238C6E0089FB89 /* etonkidsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = etonkidsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF95BE11D238C6E0089FB89 /* etonkidsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = etonkidsTests.m; sourceTree = "<group>"; };
+		BAF95BE31D238C6E0089FB89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAF95BE81D238C6E0089FB89 /* etonkidsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = etonkidsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAF95BEC1D238C6E0089FB89 /* etonkidsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = etonkidsUITests.m; sourceTree = "<group>"; };
+		BAF95BEE1D238C6E0089FB89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BAF95BC11D238C6E0089FB89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF95BDA1D238C6E0089FB89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF95BE51D238C6E0089FB89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BAF95BBB1D238C6D0089FB89 = {
+			isa = PBXGroup;
+			children = (
+				BAF95BC61D238C6E0089FB89 /* etonkids */,
+				BAF95BE01D238C6E0089FB89 /* etonkidsTests */,
+				BAF95BEB1D238C6E0089FB89 /* etonkidsUITests */,
+				BAF95BC51D238C6E0089FB89 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BAF95BC51D238C6E0089FB89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BAF95BC41D238C6E0089FB89 /* etonkids.app */,
+				BAF95BDD1D238C6E0089FB89 /* etonkidsTests.xctest */,
+				BAF95BE81D238C6E0089FB89 /* etonkidsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BAF95BC61D238C6E0089FB89 /* etonkids */ = {
+			isa = PBXGroup;
+			children = (
+				BAF95BCA1D238C6E0089FB89 /* AppDelegate.h */,
+				BAF95BCB1D238C6E0089FB89 /* AppDelegate.m */,
+				BAF95BCD1D238C6E0089FB89 /* ViewController.h */,
+				BAF95BCE1D238C6E0089FB89 /* ViewController.m */,
+				BAF95BD01D238C6E0089FB89 /* Main.storyboard */,
+				BAF95BD31D238C6E0089FB89 /* Assets.xcassets */,
+				BAF95BD51D238C6E0089FB89 /* LaunchScreen.storyboard */,
+				BAF95BD81D238C6E0089FB89 /* Info.plist */,
+				BAF95BC71D238C6E0089FB89 /* Supporting Files */,
+			);
+			path = etonkids;
+			sourceTree = "<group>";
+		};
+		BAF95BC71D238C6E0089FB89 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BAF95BC81D238C6E0089FB89 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BAF95BE01D238C6E0089FB89 /* etonkidsTests */ = {
+			isa = PBXGroup;
+			children = (
+				BAF95BE11D238C6E0089FB89 /* etonkidsTests.m */,
+				BAF95BE31D238C6E0089FB89 /* Info.plist */,
+			);
+			path = etonkidsTests;
+			sourceTree = "<group>";
+		};
+		BAF95BEB1D238C6E0089FB89 /* etonkidsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BAF95BEC1D238C6E0089FB89 /* etonkidsUITests.m */,
+				BAF95BEE1D238C6E0089FB89 /* Info.plist */,
+			);
+			path = etonkidsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BAF95BC31D238C6E0089FB89 /* etonkids */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF95BF11D238C6E0089FB89 /* Build configuration list for PBXNativeTarget "etonkids" */;
+			buildPhases = (
+				BAF95BC01D238C6E0089FB89 /* Sources */,
+				BAF95BC11D238C6E0089FB89 /* Frameworks */,
+				BAF95BC21D238C6E0089FB89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = etonkids;
+			productName = etonkids;
+			productReference = BAF95BC41D238C6E0089FB89 /* etonkids.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BAF95BDC1D238C6E0089FB89 /* etonkidsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF95BF41D238C6E0089FB89 /* Build configuration list for PBXNativeTarget "etonkidsTests" */;
+			buildPhases = (
+				BAF95BD91D238C6E0089FB89 /* Sources */,
+				BAF95BDA1D238C6E0089FB89 /* Frameworks */,
+				BAF95BDB1D238C6E0089FB89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAF95BDF1D238C6E0089FB89 /* PBXTargetDependency */,
+			);
+			name = etonkidsTests;
+			productName = etonkidsTests;
+			productReference = BAF95BDD1D238C6E0089FB89 /* etonkidsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BAF95BE71D238C6E0089FB89 /* etonkidsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BAF95BF71D238C6E0089FB89 /* Build configuration list for PBXNativeTarget "etonkidsUITests" */;
+			buildPhases = (
+				BAF95BE41D238C6E0089FB89 /* Sources */,
+				BAF95BE51D238C6E0089FB89 /* Frameworks */,
+				BAF95BE61D238C6E0089FB89 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BAF95BEA1D238C6E0089FB89 /* PBXTargetDependency */,
+			);
+			name = etonkidsUITests;
+			productName = etonkidsUITests;
+			productReference = BAF95BE81D238C6E0089FB89 /* etonkidsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BAF95BBC1D238C6D0089FB89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = ytdinfo;
+				TargetAttributes = {
+					BAF95BC31D238C6E0089FB89 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					BAF95BDC1D238C6E0089FB89 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = BAF95BC31D238C6E0089FB89;
+					};
+					BAF95BE71D238C6E0089FB89 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = BAF95BC31D238C6E0089FB89;
+					};
+				};
+			};
+			buildConfigurationList = BAF95BBF1D238C6D0089FB89 /* Build configuration list for PBXProject "etonkids" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BAF95BBB1D238C6D0089FB89;
+			productRefGroup = BAF95BC51D238C6E0089FB89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BAF95BC31D238C6E0089FB89 /* etonkids */,
+				BAF95BDC1D238C6E0089FB89 /* etonkidsTests */,
+				BAF95BE71D238C6E0089FB89 /* etonkidsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BAF95BC21D238C6E0089FB89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF95BD71D238C6E0089FB89 /* LaunchScreen.storyboard in Resources */,
+				BAF95BD41D238C6E0089FB89 /* Assets.xcassets in Resources */,
+				BAF95BD21D238C6E0089FB89 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF95BDB1D238C6E0089FB89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF95BE61D238C6E0089FB89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BAF95BC01D238C6E0089FB89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF95BCF1D238C6E0089FB89 /* ViewController.m in Sources */,
+				BAF95BCC1D238C6E0089FB89 /* AppDelegate.m in Sources */,
+				BAF95BC91D238C6E0089FB89 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF95BD91D238C6E0089FB89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF95BE21D238C6E0089FB89 /* etonkidsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BAF95BE41D238C6E0089FB89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BAF95BED1D238C6E0089FB89 /* etonkidsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BAF95BDF1D238C6E0089FB89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAF95BC31D238C6E0089FB89 /* etonkids */;
+			targetProxy = BAF95BDE1D238C6E0089FB89 /* PBXContainerItemProxy */;
+		};
+		BAF95BEA1D238C6E0089FB89 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BAF95BC31D238C6E0089FB89 /* etonkids */;
+			targetProxy = BAF95BE91D238C6E0089FB89 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BAF95BD01D238C6E0089FB89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF95BD11D238C6E0089FB89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BAF95BD51D238C6E0089FB89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BAF95BD61D238C6E0089FB89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BAF95BEF1D238C6E0089FB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BAF95BF01D238C6E0089FB89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BAF95BF21D238C6E0089FB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = etonkids/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ytdinfo.etonkids.etonkids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BAF95BF31D238C6E0089FB89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = etonkids/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ytdinfo.etonkids.etonkids;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BAF95BF51D238C6E0089FB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = etonkidsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ytdinfo.etonkids.etonkidsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/etonkids.app/etonkids";
+			};
+			name = Debug;
+		};
+		BAF95BF61D238C6E0089FB89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = etonkidsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ytdinfo.etonkids.etonkidsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/etonkids.app/etonkids";
+			};
+			name = Release;
+		};
+		BAF95BF81D238C6E0089FB89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = etonkidsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ytdinfo.etonkids.etonkidsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = etonkids;
+			};
+			name = Debug;
+		};
+		BAF95BF91D238C6E0089FB89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = etonkidsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ytdinfo.etonkids.etonkidsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = etonkids;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BAF95BBF1D238C6D0089FB89 /* Build configuration list for PBXProject "etonkids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF95BEF1D238C6E0089FB89 /* Debug */,
+				BAF95BF01D238C6E0089FB89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BAF95BF11D238C6E0089FB89 /* Build configuration list for PBXNativeTarget "etonkids" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF95BF21D238C6E0089FB89 /* Debug */,
+				BAF95BF31D238C6E0089FB89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAF95BF41D238C6E0089FB89 /* Build configuration list for PBXNativeTarget "etonkidsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF95BF51D238C6E0089FB89 /* Debug */,
+				BAF95BF61D238C6E0089FB89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BAF95BF71D238C6E0089FB89 /* Build configuration list for PBXNativeTarget "etonkidsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAF95BF81D238C6E0089FB89 /* Debug */,
+				BAF95BF91D238C6E0089FB89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BAF95BBC1D238C6D0089FB89 /* Project object */;
+}
