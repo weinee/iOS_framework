@@ -24,6 +24,9 @@
     // Dispose of any resources that can be recreated.
 }
 
++(NSString *)storyboardId{
+	return @"BaseViewController";
+}
 /*
 #pragma mark - Navigation
 

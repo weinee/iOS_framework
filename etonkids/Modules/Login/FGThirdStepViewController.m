@@ -1,19 +1,18 @@
 //
-//  LoginViewController.m
+//  FGThirdStepViewController.m
 //  etonkids
 //
-//  Created by weineeL on 16/6/29.
+//  Created by weineeL on 16/6/30.
 //  Copyright © 2016年 ytdinfo. All rights reserved.
 //
 
-#import "LoginViewController.h"
-#import "HomeTabBarController.h"
+#import "FGThirdStepViewController.h"
 
-@interface LoginViewController ()
+@interface FGThirdStepViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation FGThirdStepViewController
 
 #pragma mark - def
 
@@ -32,11 +31,12 @@
 #pragma mark - model event
 
 #pragma mark - view event & action
-- (IBAction)clickLoginBtn:(id)sender {
-//	[UIStoryboard]	
-//	[self performSegueWithIdentifier:@"Main" sender:self];
-	 [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:[HomeTabBarController storyboardId]] animated:YES];
+- (IBAction)modyfyPwdSuccess:(id)sender {
+	[self.navigationController dismissViewControllerAnimated:YES completion:^{
+		;
+	}];
 }
+
 #pragma mark - private
 
 #pragma mark - getter / setter

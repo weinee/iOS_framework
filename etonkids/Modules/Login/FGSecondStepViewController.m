@@ -1,18 +1,18 @@
 //
-//  BaseNavigationViewController.m
-//  YPB-TG
+//  FGSecondStepViewController.m
+//  etonkids
 //
-//  Created by weineeL on 16/6/25.
-//  Copyright © 2016年 weinee. All rights reserved.
+//  Created by weineeL on 16/6/30.
+//  Copyright © 2016年 ytdinfo. All rights reserved.
 //
 
-#import "BaseNavigationViewController.h"
+#import "FGSecondStepViewController.h"
 
-@interface BaseNavigationViewController ()
+@interface FGSecondStepViewController ()
 
 @end
 
-@implementation BaseNavigationViewController
+@implementation FGSecondStepViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -22,10 +22,6 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-+(NSString *)storyboardId{
-	return @"BaseNavigationViewController";
 }
 
 /*

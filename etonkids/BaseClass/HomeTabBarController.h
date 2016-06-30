@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StoryboardIdProtocol.h"
 
-@interface HomeTabBarController : UITabBarController
+@interface HomeTabBarController : UITabBarController <StoryboardIdProtocol>
 
 @end

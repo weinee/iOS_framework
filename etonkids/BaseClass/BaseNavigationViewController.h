@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StoryboardIdProtocol.h"
 
-@interface BaseNavigationViewController : UINavigationController
+@interface BaseNavigationViewController : UINavigationController <StoryboardIdProtocol>
 
 @end

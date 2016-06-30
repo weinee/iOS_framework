@@ -1,19 +1,19 @@
 //
-//  LoginViewController.m
+//  FGStepBaseViewController.m
 //  etonkids
 //
-//  Created by weineeL on 16/6/29.
+//  Created by weineeL on 16/6/30.
 //  Copyright © 2016年 ytdinfo. All rights reserved.
 //
 
-#import "LoginViewController.h"
-#import "HomeTabBarController.h"
+#import "FGStepBaseViewController.h"
+#import "ForgetPwdNavigationController.h"
 
-@interface LoginViewController ()
+@interface FGStepBaseViewController ()
 
 @end
 
-@implementation LoginViewController
+@implementation FGStepBaseViewController
 
 #pragma mark - def
 
@@ -21,23 +21,32 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view.
+	[self initNavigationBar];
 }
 
 - (void)didReceiveMemoryWarning {
 	[super didReceiveMemoryWarning];
 	// Dispose of any resources that can be recreated.
 }
+
 #pragma mark - api
 
 #pragma mark - model event
 
 #pragma mark - view event & action
-- (IBAction)clickLoginBtn:(id)sender {
-//	[UIStoryboard]	
-//	[self performSegueWithIdentifier:@"Main" sender:self];
-	 [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:[HomeTabBarController storyboardId]] animated:YES];
+- (void)cancelModifyPwd:(id)sender {
+	
+	[self.navigationController dismissViewControllerAnimated:YES completion:^{
+		
+	}];
 }
+
 #pragma mark - private
+-(void)initNavigationBar{
+	self.navigationItem.title = @"重置密码";
+	self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"icon_close"] style:UIBarButtonItemStylePlain target:self action:@selector(cancelModifyPwd:)];
+	
+}
 
 #pragma mark - getter / setter
 

@@ -13,16 +13,34 @@
 @end
 
 @implementation HomeTabBarController
+#pragma mark - def
 
+#pragma mark - override
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+	[super viewDidLoad];
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+	[super didReceiveMemoryWarning];
+	// Dispose of any resources that can be recreated.
 }
+
+#pragma mark - api
+
+#pragma mark - model event
+
+#pragma mark - view event & action
+
+#pragma mark - private
+
+#pragma mark - getter / setter
++(NSString *)storyboardId{
+	return @"HomeTabBarController";
+}
+
+#pragma mark - layoutSubviews
+
 
 /*
 #pragma mark - Navigation

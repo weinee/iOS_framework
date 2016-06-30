@@ -68,7 +68,37 @@ static CommonRegister *sharedRegister;
 }
 
 -(void)registApperance{
+	/************ 控件外观设置 **************/
+	[[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+	NSDictionary *navbarTitleTextAttributes = @{NSForegroundColorAttributeName:[UIColor colorWithRed:237/255.0f green:37/255.0f blue:9/255.0f alpha:1]};
+	[[UINavigationBar appearance] setTitleTextAttributes:navbarTitleTextAttributes];
+	[[UINavigationBar appearance] setTintColor:[UIColor colorWithRed:237/255.0f green:37/255.0f blue:9/255.0f alpha:1]];
+	[[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:255/255.0f green:255/255.0f blue:255/255.0f alpha:1]];
+	[[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navbar_bg"] forBarMetrics:UIBarMetricsDefault];
 	
+	[[UITabBar appearance] setTintColor:[UIColor colorWithRed:237/255.0f green:37/255.0f blue:9/255.0f alpha:1]];
+	[[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor colorWithRed:237/255.0f green:37/255.0f blue:9/255.0f alpha:1]} forState:UIControlStateSelected];
+	
+	[[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:225/255.0f green:225/255.0f blue:225/255.0f alpha:1]];
+	
+	[UISearchBar appearance].tintColor = [UIColor colorWithRed:237/255.0f green:37/255.0f blue:9/255.0f alpha:1];
+	[[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setCornerRadius:14.0];
+	[[UITextField appearanceWhenContainedIn:[UISearchBar class], nil] setAlpha:0.6];
+	
+	UIPageControl *pageControl = [UIPageControl appearance];
+	pageControl.pageIndicatorTintColor = [UIColor colorWithRed:220/255.0f green:220/255.0f blue:220/255.0f alpha:1];
+	pageControl.currentPageIndicatorTintColor = [UIColor grayColor];
+	
+	[[UITextField appearance] setTintColor:[UIColor colorWithRed:8/255.0f green:114/255.0f blue:33/255.0f alpha:1]];
+	[[UITextView appearance]  setTintColor:[UIColor colorWithRed:8/255.0f green:114/255.0f blue:33/255.0f alpha:1]];
+	
+	UIMenuController *menuController = [UIMenuController sharedMenuController];
+	
+	[menuController setMenuVisible:YES animated:YES];
+	[menuController setMenuItems:@[
+								   [[UIMenuItem alloc] initWithTitle:@"复制" action:NSSelectorFromString(@"copyText:")],
+								   [[UIMenuItem alloc] initWithTitle:@"删除" action:NSSelectorFromString(@"deleteObject:")]
+								   ]];
 }
 
 #pragma mark getter/setter

@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="xYf-e4-4Ey">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oGn-B1-atY">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Hwg-Hk-MKZ">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="oGn-B1-atY" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YW4-JO-7Mo">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xYf-e4-4Ey" kind="relationship" relationship="rootViewController" id="Sjs-OU-MP2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0uC-oQ-hwa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-780" y="-208"/>
+        </scene>
         <!--NonLogin View Controller-->
         <scene sceneID="0e2-6n-aGD">
             <objects>
@@ -37,7 +53,7 @@
                                 </constraints>
                                 <state key="normal" title="登录"/>
                                 <connections>
-                                    <segue destination="MYt-kQ-pGH" kind="presentation" modalTransitionStyle="crossDissolve" id="ajg-xx-PLO"/>
+                                    <segue destination="MYt-kQ-pGH" kind="show" id="ajg-xx-PLO"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -96,7 +112,7 @@
         <!--Login View Controller-->
         <scene sceneID="L2k-aB-V8T">
             <objects>
-                <viewController storyboardIdentifier="LoginViewController" id="MYt-kQ-pGH" userLabel="Login View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="MYt-kQ-pGH" userLabel="Login View Controller" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nlq-8B-Zpc"/>
                         <viewControllerLayoutGuide type="bottom" id="Wth-42-WRV"/>
@@ -108,6 +124,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spZ-oe-5lb">
                                 <rect key="frame" x="160" y="191" width="30" height="30"/>
                                 <state key="normal" title="登录"/>
+                                <connections>
+                                    <action selector="clickLoginBtn:" destination="MYt-kQ-pGH" eventType="touchUpInside" id="h0o-4s-W1C"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spb-ws-6ow">
                                 <rect key="frame" x="26" y="264" width="60" height="30"/>
@@ -124,9 +143,12 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="6L5-gM-PK1"/>
+                    <connections>
+                        <segue destination="NVD-BG-g1d" kind="show" identifier="Main" id="TTo-6I-Yok"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etP-1o-f6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -135,7 +157,7 @@
         <!--FGFirstStep View Controller-->
         <scene sceneID="ACe-gq-10p">
             <objects>
-                <viewController storyboardIdentifier="FGFirstStepViewController" id="AvB-9p-e1J" userLabel="FGFirstStep View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FGFirstStepViewController" id="AvB-9p-e1J" userLabel="FGFirstStep View Controller" customClass="FGFirstStepViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yMQ-SB-FNP"/>
                         <viewControllerLayoutGuide type="bottom" id="VNQ-Zk-YGY"/>
@@ -154,16 +176,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cnK-wj-frd"/>
+                    <navigationItem key="navigationItem" title="重置密码" id="cnK-wj-frd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vIP-Sz-YJC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1397" y="569"/>
+            <point key="canvasLocation" x="1413" y="1346"/>
         </scene>
         <!--FGSecondStep View Controller-->
         <scene sceneID="551-UE-Js0">
             <objects>
-                <viewController storyboardIdentifier="FGSecondStepViewController" id="Xak-eC-tOX" userLabel="FGSecondStep View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FGSecondStepViewController" id="Xak-eC-tOX" userLabel="FGSecondStep View Controller" customClass="FGSecondStepViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Amp-tB-yXp"/>
                         <viewControllerLayoutGuide type="bottom" id="Jq2-5N-6oN"/>
@@ -186,12 +208,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yGw-Ee-MUI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2097" y="569"/>
+            <point key="canvasLocation" x="2113" y="1346"/>
         </scene>
         <!--FGThirdStep View Controller-->
         <scene sceneID="848-wZ-S5d">
             <objects>
-                <viewController storyboardIdentifier="FGThirdStepViewController" id="Ybl-JM-0rs" userLabel="FGThirdStep View Controller" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FGThirdStepViewController" id="Ybl-JM-0rs" userLabel="FGThirdStep View Controller" customClass="FGThirdStepViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4PC-Aq-q8v"/>
                         <viewControllerLayoutGuide type="bottom" id="iXT-qq-F2I"/>
@@ -203,6 +225,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ou9-rY-73z">
                                 <rect key="frame" x="112" y="285" width="90" height="30"/>
                                 <state key="normal" title="完成，去登录"/>
+                                <connections>
+                                    <action selector="modyfyPwdSuccess:" destination="Ybl-JM-0rs" eventType="touchUpInside" id="nNd-oQ-Amp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -211,7 +236,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6AW-Jf-k5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2790" y="569"/>
+            <point key="canvasLocation" x="2806" y="1346"/>
+        </scene>
+        <!--Home Tab Bar Controller-->
+        <scene sceneID="wi7-1c-oHN">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JKo-jC-i7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tabBarController storyboardIdentifier="HomeTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NVD-BG-g1d" customClass="HomeTabBarController" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="IH0-s5-u2q"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="IVW-Kx-Jyr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                </tabBarController>
+            </objects>
+            <point key="canvasLocation" x="1413" y="-208"/>
         </scene>
         <!--ForgetPwd Navigation Controller-->
         <scene sceneID="9XI-NL-fc3">
@@ -222,14 +262,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <outlet property="navigationItem" destination="1Bf-jN-YfE" id="CvL-Am-PBK"/>
                         <segue destination="AvB-9p-e1J" kind="relationship" relationship="rootViewController" id="im6-GC-10U"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WJ9-5u-8mx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <navigationItem title="Title" id="1Bf-jN-YfE"/>
             </objects>
-            <point key="canvasLocation" x="1397" y="-208"/>
+            <point key="canvasLocation" x="1413" y="569"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

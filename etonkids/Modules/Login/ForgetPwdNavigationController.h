@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseNavigationViewController.h"
 
-@interface ForgetPwdNavigationController : UINavigationController
+@interface ForgetPwdNavigationController : BaseNavigationViewController
+
+@property(nonatomic, assign) BOOL modifyPwdSuccess;
 
 @end

@@ -12,6 +12,13 @@
 		BAB992471D23DEA600B6CA2E /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB992431D23DEA600B6CA2E /* LoginViewController.m */; };
 		BAB992481D23DEA600B6CA2E /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB992451D23DEA600B6CA2E /* RegistViewController.m */; };
 		BAB9924C1D23E06B00B6CA2E /* ForgetPwdNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB9924B1D23E06B00B6CA2E /* ForgetPwdNavigationController.m */; };
+		BAB993121D2522AB00B6CA2E /* FGFirstStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB993111D2522AB00B6CA2E /* FGFirstStepViewController.m */; };
+		BAB993151D25243500B6CA2E /* FGSecondStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB993141D25243500B6CA2E /* FGSecondStepViewController.m */; };
+		BAB993181D25244A00B6CA2E /* FGThirdStepViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB993171D25244A00B6CA2E /* FGThirdStepViewController.m */; };
+		BAB993211D25255900B6CA2E /* FGStepBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB993201D25255900B6CA2E /* FGStepBaseViewController.m */; };
+		BAB993281D253B8A00B6CA2E /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB993271D253B8A00B6CA2E /* HomePage.storyboard */; };
+		BAB9932A1D253B9300B6CA2E /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB993291D253B9300B6CA2E /* Me.storyboard */; };
+		BAB9932C1D253B9B00B6CA2E /* MoreService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB9932B1D253B9B00B6CA2E /* MoreService.storyboard */; };
 		BAF95BC91D238C6E0089FB89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95BC81D238C6E0089FB89 /* main.m */; };
 		BAF95BD41D238C6E0089FB89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF95BD31D238C6E0089FB89 /* Assets.xcassets */; };
 		BAF95BD71D238C6E0089FB89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF95BD51D238C6E0089FB89 /* LaunchScreen.storyboard */; };
@@ -125,7 +132,6 @@
 		BAF95E261D23B18F0089FB89 /* NSTextAttachment+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95E0A1D23B18F0089FB89 /* NSTextAttachment+Util.m */; };
 		BAF95E271D23B18F0089FB89 /* UIBarButtonItem+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95E0C1D23B18F0089FB89 /* UIBarButtonItem+Badge.m */; };
 		BAF95E281D23B18F0089FB89 /* UIButton+Badge.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95E0E1D23B18F0089FB89 /* UIButton+Badge.m */; };
-		BAF95E291D23B18F0089FB89 /* UIColor+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95E101D23B18F0089FB89 /* UIColor+Util.m */; };
 		BAF95E2A1D23B18F0089FB89 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95E121D23B18F0089FB89 /* UIImage+Util.m */; };
 		BAF95E2B1D23B18F0089FB89 /* UIImageView+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95E141D23B18F0089FB89 /* UIImageView+Util.m */; };
 		BAF95E2C1D23B18F0089FB89 /* UINavigationController+Router.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95E161D23B18F0089FB89 /* UINavigationController+Router.m */; };
@@ -164,6 +170,19 @@
 		BAB992451D23DEA600B6CA2E /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
 		BAB9924A1D23E06B00B6CA2E /* ForgetPwdNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ForgetPwdNavigationController.h; sourceTree = "<group>"; };
 		BAB9924B1D23E06B00B6CA2E /* ForgetPwdNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ForgetPwdNavigationController.m; sourceTree = "<group>"; };
+		BAB9930E1D25195F00B6CA2E /* etonkids copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "etonkids copy-Info.plist"; path = "/Users/weinee/Desktop/sourcetree/etonkids/etonkids copy-Info.plist"; sourceTree = "<absolute>"; };
+		BAB993101D2522AB00B6CA2E /* FGFirstStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGFirstStepViewController.h; sourceTree = "<group>"; };
+		BAB993111D2522AB00B6CA2E /* FGFirstStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGFirstStepViewController.m; sourceTree = "<group>"; };
+		BAB993131D25243500B6CA2E /* FGSecondStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGSecondStepViewController.h; sourceTree = "<group>"; };
+		BAB993141D25243500B6CA2E /* FGSecondStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGSecondStepViewController.m; sourceTree = "<group>"; };
+		BAB993161D25244A00B6CA2E /* FGThirdStepViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGThirdStepViewController.h; sourceTree = "<group>"; };
+		BAB993171D25244A00B6CA2E /* FGThirdStepViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGThirdStepViewController.m; sourceTree = "<group>"; };
+		BAB9931F1D25255900B6CA2E /* FGStepBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGStepBaseViewController.h; sourceTree = "<group>"; };
+		BAB993201D25255900B6CA2E /* FGStepBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGStepBaseViewController.m; sourceTree = "<group>"; };
+		BAB993271D253B8A00B6CA2E /* HomePage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomePage.storyboard; sourceTree = "<group>"; };
+		BAB993291D253B9300B6CA2E /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		BAB9932B1D253B9B00B6CA2E /* MoreService.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MoreService.storyboard; sourceTree = "<group>"; };
+		BAB993301D2546E800B6CA2E /* StoryboardIdProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardIdProtocol.h; sourceTree = "<group>"; };
 		BAF95BC41D238C6E0089FB89 /* etonkids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = etonkids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF95BC81D238C6E0089FB89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAF95BD31D238C6E0089FB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -379,8 +398,6 @@
 		BAF95E0C1D23B18F0089FB89 /* UIBarButtonItem+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Badge.m"; sourceTree = "<group>"; };
 		BAF95E0D1D23B18F0089FB89 /* UIButton+Badge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Badge.h"; sourceTree = "<group>"; };
 		BAF95E0E1D23B18F0089FB89 /* UIButton+Badge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Badge.m"; sourceTree = "<group>"; };
-		BAF95E0F1D23B18F0089FB89 /* UIColor+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Util.h"; sourceTree = "<group>"; };
-		BAF95E101D23B18F0089FB89 /* UIColor+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Util.m"; sourceTree = "<group>"; };
 		BAF95E111D23B18F0089FB89 /* UIImage+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Util.h"; sourceTree = "<group>"; };
 		BAF95E121D23B18F0089FB89 /* UIImage+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Util.m"; sourceTree = "<group>"; };
 		BAF95E131D23B18F0089FB89 /* UIImageView+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Util.h"; sourceTree = "<group>"; };
@@ -449,22 +466,86 @@
 			isa = PBXGroup;
 			children = (
 				BAB992411D23DEA600B6CA2E /* Login.storyboard */,
-				BAB992491D23DEAA00B6CA2E /* SubViewController */,
+				BAB992491D23DEAA00B6CA2E /* ViewController */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		BAB992491D23DEAA00B6CA2E /* SubViewController */ = {
+		BAB992491D23DEAA00B6CA2E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BAB9930F1D25221200B6CA2E /* ForgetPWD */,
 				BAB992421D23DEA600B6CA2E /* LoginViewController.h */,
 				BAB992431D23DEA600B6CA2E /* LoginViewController.m */,
 				BAB992441D23DEA600B6CA2E /* RegistViewController.h */,
 				BAB992451D23DEA600B6CA2E /* RegistViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		BAB9930F1D25221200B6CA2E /* ForgetPWD */ = {
+			isa = PBXGroup;
+			children = (
 				BAB9924A1D23E06B00B6CA2E /* ForgetPwdNavigationController.h */,
 				BAB9924B1D23E06B00B6CA2E /* ForgetPwdNavigationController.m */,
+				BAB993101D2522AB00B6CA2E /* FGFirstStepViewController.h */,
+				BAB993111D2522AB00B6CA2E /* FGFirstStepViewController.m */,
+				BAB993131D25243500B6CA2E /* FGSecondStepViewController.h */,
+				BAB993141D25243500B6CA2E /* FGSecondStepViewController.m */,
+				BAB993161D25244A00B6CA2E /* FGThirdStepViewController.h */,
+				BAB993171D25244A00B6CA2E /* FGThirdStepViewController.m */,
+				BAB9931F1D25255900B6CA2E /* FGStepBaseViewController.h */,
+				BAB993201D25255900B6CA2E /* FGStepBaseViewController.m */,
 			);
-			name = SubViewController;
+			name = ForgetPWD;
+			sourceTree = "<group>";
+		};
+		BAB993241D253B6D00B6CA2E /* MoreService */ = {
+			isa = PBXGroup;
+			children = (
+				BAB9932B1D253B9B00B6CA2E /* MoreService.storyboard */,
+				BAB9932F1D253C1400B6CA2E /* ViewController */,
+			);
+			path = MoreService;
+			sourceTree = "<group>";
+		};
+		BAB993251D253B7200B6CA2E /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				BAB993291D253B9300B6CA2E /* Me.storyboard */,
+				BAB9932E1D253C0600B6CA2E /* ViewController */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		BAB993261D253B7800B6CA2E /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				BAB993271D253B8A00B6CA2E /* HomePage.storyboard */,
+				BAB9932D1D253BED00B6CA2E /* ViewController */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		BAB9932D1D253BED00B6CA2E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		BAB9932E1D253C0600B6CA2E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		BAB9932F1D253C1400B6CA2E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		BAF95BBB1D238C6D0089FB89 = {
@@ -476,6 +557,7 @@
 				BAF95BC51D238C6E0089FB89 /* Products */,
 				4BFAB651C4DB4EB1EAD5266C /* Pods */,
 				0A010DD8E9F8C92DFCD213CA /* Frameworks */,
+				BAB9930E1D25195F00B6CA2E /* etonkids copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -553,6 +635,7 @@
 				BAF95C131D2398B80089FB89 /* BaseViewController.m */,
 				BAF95E321D23C4410089FB89 /* HomeTabBarController.h */,
 				BAF95E331D23C4410089FB89 /* HomeTabBarController.m */,
+				BAB993301D2546E800B6CA2E /* StoryboardIdProtocol.h */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -579,6 +662,9 @@
 		BAF95C1D1D2398CD0089FB89 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				BAB993261D253B7800B6CA2E /* HomePage */,
+				BAB993251D253B7200B6CA2E /* Me */,
+				BAB993241D253B6D00B6CA2E /* MoreService */,
 				BAB992401D23DEA600B6CA2E /* Login */,
 			);
 			path = Modules;
@@ -1158,8 +1244,6 @@
 				BAF95E0C1D23B18F0089FB89 /* UIBarButtonItem+Badge.m */,
 				BAF95E0D1D23B18F0089FB89 /* UIButton+Badge.h */,
 				BAF95E0E1D23B18F0089FB89 /* UIButton+Badge.m */,
-				BAF95E0F1D23B18F0089FB89 /* UIColor+Util.h */,
-				BAF95E101D23B18F0089FB89 /* UIColor+Util.m */,
 				BAF95E111D23B18F0089FB89 /* UIImage+Util.h */,
 				BAF95E121D23B18F0089FB89 /* UIImage+Util.m */,
 				BAF95E131D23B18F0089FB89 /* UIImageView+Util.h */,
@@ -1321,6 +1405,7 @@
 				BAF95DD01D23A7320089FB89 /* btn_selected@3x.png in Resources */,
 				BAF95D3B1D239C460089FB89 /* MLEmoji_Expression.bundle in Resources */,
 				BAF95DD11D23A7320089FB89 /* btn_unselected.png in Resources */,
+				BAB993281D253B8A00B6CA2E /* HomePage.storyboard in Resources */,
 				BAF95DDA1D23A7320089FB89 /* ZLNoAuthorityViewController.xib in Resources */,
 				BAF95DC81D23A7320089FB89 /* ZLBigImageCell.xib in Resources */,
 				BAF95DCF1D23A7320089FB89 /* btn_selected@2x.png in Resources */,
@@ -1329,6 +1414,7 @@
 				BAF95DD61D23A7320089FB89 /* navBackBtn@2x.png in Resources */,
 				BAF95D491D239C460089FB89 /* LICENSE in Resources */,
 				BAF95BD71D238C6E0089FB89 /* LaunchScreen.storyboard in Resources */,
+				BAB9932C1D253B9B00B6CA2E /* MoreService.storyboard in Resources */,
 				BAF95DD21D23A7320089FB89 /* btn_unselected@2x.png in Resources */,
 				BAF95DCE1D23A7320089FB89 /* btn_selected.png in Resources */,
 				BAF95DCD1D23A7320089FB89 /* btn_circle@3x.png in Resources */,
@@ -1339,6 +1425,7 @@
 				BAF95BD41D238C6E0089FB89 /* Assets.xcassets in Resources */,
 				BAF95DD31D23A7320089FB89 /* btn_unselected@3x.png in Resources */,
 				BAF95DCC1D23A7320089FB89 /* ZLPhotoBrowserCell.xib in Resources */,
+				BAB9932A1D253B9300B6CA2E /* Me.storyboard in Resources */,
 				BAF95DE21D23A7320089FB89 /* ZLThumbnailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1418,9 +1505,11 @@
 				BAF95DCB1D23A7320089FB89 /* ZLPhotoBrowserCell.m in Sources */,
 				BAF95DD91D23A7320089FB89 /* ZLNoAuthorityViewController.m in Sources */,
 				BAF95D311D239C460089FB89 /* CXTabIndicatorView.m in Sources */,
+				BAB993121D2522AB00B6CA2E /* FGFirstStepViewController.m in Sources */,
 				BAF95DC71D23A7320089FB89 /* ZLBigImageCell.m in Sources */,
 				BAF95E221D23B18F0089FB89 /* NSDate+Util.m in Sources */,
 				BAF95E381D23C5310089FB89 /* HomeTabBarView.m in Sources */,
+				BAB993181D25244A00B6CA2E /* FGThirdStepViewController.m in Sources */,
 				BAF95C0E1D2398B00089FB89 /* AppDelegate.m in Sources */,
 				BAF95DDF1D23A7320089FB89 /* ZLSelectPhotoModel.m in Sources */,
 				BAF95D241D239C460089FB89 /* AuthcodeView.m in Sources */,
@@ -1456,6 +1545,7 @@
 				BAF95D701D239C460089FB89 /* SegmentedView.m in Sources */,
 				BAF95D6E1D239C460089FB89 /* SDPhotoBrowser.m in Sources */,
 				BAF95D7D1D239C460089FB89 /* Utilities.m in Sources */,
+				BAB993151D25243500B6CA2E /* FGSecondStepViewController.m in Sources */,
 				BAF95D4B1D239C460089FB89 /* TTTAttributedLabel.m in Sources */,
 				BAF95D2D1D239C460089FB89 /* CXDurationPickerMonthView.m in Sources */,
 				BAF95D6F1D239C460089FB89 /* SDWaitingView.m in Sources */,
@@ -1468,11 +1558,11 @@
 				BAF95D7F1D239C460089FB89 /* VPImageCropperViewController.m in Sources */,
 				BAF95D471D239C460089FB89 /* MLLabel.m in Sources */,
 				BAF95C191D2398BF0089FB89 /* CommonRegister.m in Sources */,
-				BAF95E291D23B18F0089FB89 /* UIColor+Util.m in Sources */,
 				BAF95D731D239C460089FB89 /* SSKeychainQuery.m in Sources */,
 				BAF95DE01D23A7320089FB89 /* ZLShowBigImgViewController.m in Sources */,
 				BAF95E261D23B18F0089FB89 /* NSTextAttachment+Util.m in Sources */,
 				BAF95D7A1D239C460089FB89 /* UITextView+Category.m in Sources */,
+				BAB993211D25255900B6CA2E /* FGStepBaseViewController.m in Sources */,
 				BAF95D411D239C460089FB89 /* NSString+MLLabel.m in Sources */,
 				BAB992471D23DEA600B6CA2E /* LoginViewController.m in Sources */,
 				BAF95D7B1D239C460089FB89 /* UIView+animateTextField.m in Sources */,
@@ -1604,7 +1694,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -1643,7 +1733,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
