@@ -33,9 +33,9 @@
 
 #pragma mark - view event & action
 - (IBAction)clickLoginBtn:(id)sender {
-//	[UIStoryboard]	
-//	[self performSegueWithIdentifier:@"Main" sender:self];
-	 [self.navigationController pushViewController:[self.storyboard instantiateViewControllerWithIdentifier:[HomeTabBarController storyboardId]] animated:YES];
+	UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+	UIViewController *controller = [mainStoryboard instantiateInitialViewController];
+	[self.navigationController pushViewController:controller animated:YES];
 }
 #pragma mark - private
 

@@ -6,10 +6,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Navigation Controller-->
+        <!--Top Navigation View Controller-->
         <scene sceneID="Hwg-Hk-MKZ">
             <objects>
-                <navigationController navigationBarHidden="YES" id="oGn-B1-atY" sceneMemberID="viewController">
+                <navigationController navigationBarHidden="YES" id="oGn-B1-atY" customClass="TopNavigationViewController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YW4-JO-7Mo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -146,9 +146,6 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="6L5-gM-PK1"/>
-                    <connections>
-                        <segue destination="NVD-BG-g1d" kind="show" identifier="Main" id="TTo-6I-Yok"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="etP-1o-f6w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -237,21 +234,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6AW-Jf-k5Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2806" y="1346"/>
-        </scene>
-        <!--Home Tab Bar Controller-->
-        <scene sceneID="wi7-1c-oHN">
-            <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JKo-jC-i7J" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tabBarController storyboardIdentifier="HomeTabBarController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="NVD-BG-g1d" customClass="HomeTabBarController" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="IH0-s5-u2q"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="IVW-Kx-Jyr">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                </tabBarController>
-            </objects>
-            <point key="canvasLocation" x="1413" y="-208"/>
         </scene>
         <!--ForgetPwd Navigation Controller-->
         <scene sceneID="9XI-NL-fc3">

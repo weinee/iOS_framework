@@ -18,5 +18,5 @@
 #import "UIKit+AFNetworking.h"
 #import "AFHTTPRequestOperationManager.h"
 #import "MBHttpProgressHUD.h"
-
+#import "Masonry.h"
 #endif /* ThirdPart_h */

@@ -29,21 +29,19 @@
 @property (nonatomic,strong) UILabel *badgeView;
 @property (nonatomic) Boolean selected;
 
+-(instancetype)initWithFrame:(CGRect)frame andSelectedImage:(UIImage *)seletctedImage unSelectedImage:(UIImage *) unSelectedImage andTitle:(NSString *) title;
 
 @end
 
-@interface HomeTabBarView : UIView{
-  HomeTabBarItem* item1;
-  HomeTabBarItem* item2;
-  HomeTabBarItem* item3;
-  HomeTabBarItem* item4;
-  HomeTabBarItem* item5;
-}
--(instancetype)initWithDelegate:(id<HomeTabBarItemDelegate>) delegate;
+@interface HomeTabBarView : UIView
+
+@property (nonatomic, strong) NSArray<HomeTabBarItem *> * items;
+
+-(instancetype)initWithDelegate:(id<HomeTabBarItemDelegate>) delegate andSelectedImages:(NSArray <UIImage *> *)selectedImages unSelectedImages:(NSArray <UIImage *> *) unSelectedImages titles:(NSArray<NSString *>*) titles;
 -(void)selectIndex:(int)tabIndex;
 
 -(void)setupUI;
-@property id<HomeTabBarItemDelegate> delegate;
+@property id<HomeTabBarItemDelegate> delegate ;
 
 -(void)sycnMessageBadgeItemWithValue:(NSString *)stringValue;
 

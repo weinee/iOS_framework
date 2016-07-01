@@ -19,6 +19,10 @@
 		BAB993281D253B8A00B6CA2E /* HomePage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB993271D253B8A00B6CA2E /* HomePage.storyboard */; };
 		BAB9932A1D253B9300B6CA2E /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB993291D253B9300B6CA2E /* Me.storyboard */; };
 		BAB9932C1D253B9B00B6CA2E /* MoreService.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB9932B1D253B9B00B6CA2E /* MoreService.storyboard */; };
+		BAB993561D25F72900B6CA2E /* TopNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB993551D25F72900B6CA2E /* TopNavigationViewController.m */; };
+		BAB993631D26052800B6CA2E /* HPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB993621D26052800B6CA2E /* HPMainViewController.m */; };
+		BAB993661D26053500B6CA2E /* MEMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB993651D26053500B6CA2E /* MEMainViewController.m */; };
+		BAB993691D26054000B6CA2E /* MSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAB993681D26054000B6CA2E /* MSMainViewController.m */; };
 		BAF95BC91D238C6E0089FB89 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BAF95BC81D238C6E0089FB89 /* main.m */; };
 		BAF95BD41D238C6E0089FB89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAF95BD31D238C6E0089FB89 /* Assets.xcassets */; };
 		BAF95BD71D238C6E0089FB89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAF95BD51D238C6E0089FB89 /* LaunchScreen.storyboard */; };
@@ -183,6 +187,14 @@
 		BAB993291D253B9300B6CA2E /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
 		BAB9932B1D253B9B00B6CA2E /* MoreService.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MoreService.storyboard; sourceTree = "<group>"; };
 		BAB993301D2546E800B6CA2E /* StoryboardIdProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryboardIdProtocol.h; sourceTree = "<group>"; };
+		BAB993541D25F72900B6CA2E /* TopNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopNavigationViewController.h; sourceTree = "<group>"; };
+		BAB993551D25F72900B6CA2E /* TopNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopNavigationViewController.m; sourceTree = "<group>"; };
+		BAB993611D26052800B6CA2E /* HPMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPMainViewController.h; sourceTree = "<group>"; };
+		BAB993621D26052800B6CA2E /* HPMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPMainViewController.m; sourceTree = "<group>"; };
+		BAB993641D26053500B6CA2E /* MEMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEMainViewController.h; sourceTree = "<group>"; };
+		BAB993651D26053500B6CA2E /* MEMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEMainViewController.m; sourceTree = "<group>"; };
+		BAB993671D26054000B6CA2E /* MSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMainViewController.h; sourceTree = "<group>"; };
+		BAB993681D26054000B6CA2E /* MSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMainViewController.m; sourceTree = "<group>"; };
 		BAF95BC41D238C6E0089FB89 /* etonkids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = etonkids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF95BC81D238C6E0089FB89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAF95BD31D238C6E0089FB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -530,6 +542,8 @@
 		BAB9932D1D253BED00B6CA2E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BAB993611D26052800B6CA2E /* HPMainViewController.h */,
+				BAB993621D26052800B6CA2E /* HPMainViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -537,6 +551,8 @@
 		BAB9932E1D253C0600B6CA2E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BAB993641D26053500B6CA2E /* MEMainViewController.h */,
+				BAB993651D26053500B6CA2E /* MEMainViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -544,6 +560,8 @@
 		BAB9932F1D253C1400B6CA2E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				BAB993671D26054000B6CA2E /* MSMainViewController.h */,
+				BAB993681D26054000B6CA2E /* MSMainViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -636,6 +654,8 @@
 				BAF95E321D23C4410089FB89 /* HomeTabBarController.h */,
 				BAF95E331D23C4410089FB89 /* HomeTabBarController.m */,
 				BAB993301D2546E800B6CA2E /* StoryboardIdProtocol.h */,
+				BAB993541D25F72900B6CA2E /* TopNavigationViewController.h */,
+				BAB993551D25F72900B6CA2E /* TopNavigationViewController.m */,
 			);
 			path = BaseClass;
 			sourceTree = "<group>";
@@ -1517,6 +1537,7 @@
 				BAF95D821D239C460089FB89 /* WNSearchResultView.m in Sources */,
 				BAF95E251D23B18F0089FB89 /* NSString+Util.m in Sources */,
 				BAF95E2B1D23B18F0089FB89 /* UIImageView+Util.m in Sources */,
+				BAB993561D25F72900B6CA2E /* TopNavigationViewController.m in Sources */,
 				BAF95D321D239C460089FB89 /* CXTabView.m in Sources */,
 				BAF95D481D239C460089FB89 /* MLLinkLabel.m in Sources */,
 				BAF95DC91D23A7320089FB89 /* ZLCollectionCell.m in Sources */,
@@ -1535,6 +1556,7 @@
 				BAF95D291D239C460089FB89 /* CXAlertButtonItem.m in Sources */,
 				BAF95D3E1D239C460089FB89 /* MLEmojiLabel.m in Sources */,
 				BAF95D2E1D239C460089FB89 /* CXDurationPickerUtils.m in Sources */,
+				BAB993661D26053500B6CA2E /* MEMainViewController.m in Sources */,
 				BAF95DE11D23A7320089FB89 /* ZLThumbnailViewController.m in Sources */,
 				BAF95D351D239C460089FB89 /* HYBTextView.m in Sources */,
 				BAF95E2A1D23B18F0089FB89 /* UIImage+Util.m in Sources */,
@@ -1554,6 +1576,7 @@
 				BAF95E1D1D23B18F0089FB89 /* FAImageView.m in Sources */,
 				BAB992481D23DEA600B6CA2E /* RegistViewController.m in Sources */,
 				BAF95D2F1D239C460089FB89 /* CXDurationPickerView.m in Sources */,
+				BAB993631D26052800B6CA2E /* HPMainViewController.m in Sources */,
 				BAB9924C1D23E06B00B6CA2E /* ForgetPwdNavigationController.m in Sources */,
 				BAF95D7F1D239C460089FB89 /* VPImageCropperViewController.m in Sources */,
 				BAF95D471D239C460089FB89 /* MLLabel.m in Sources */,
@@ -1600,6 +1623,7 @@
 				BAF95D461D239C460089FB89 /* MLLabelLayoutManager.m in Sources */,
 				BAF95DD81D23A7320089FB89 /* ZLAnimationTool.m in Sources */,
 				BAF95D2C1D239C460089FB89 /* CXDurationPickerDayView.m in Sources */,
+				BAB993691D26054000B6CA2E /* MSMainViewController.m in Sources */,
 				BAF95D4A1D239C460089FB89 /* README.md in Sources */,
 				BAF95D331D239C460089FB89 /* UIColor+CXTabViewDefaults.m in Sources */,
 			);

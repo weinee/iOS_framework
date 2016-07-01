@@ -7,8 +7,14 @@
 //
 
 #import "HomeTabBarController.h"
+#import "HPMainViewController.h"
+#import "MEMainViewController.h"
+#import "MSMainViewController.h"
+#import "BaseNavigationViewController.h"
 
 @interface HomeTabBarController ()
+
+@property (nonatomic, strong) NSArray <UIViewController *> *subViewControllers;
 
 @end
 
@@ -19,6 +25,11 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view.
+	DDLogInfo(@"%@", self.viewControllers);
+	DDLogInfo(@"%@", self.tabBar.items);
+	[self setupViewControllers];
+	DDLogInfo(@"%@", self.viewControllers);
+	DDLogInfo(@"%@", self.tabBar.items);
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,12 +42,26 @@
 #pragma mark - model event
 
 #pragma mark - view event & action
-
+-(void)setupViewControllers{
+	NSMutableArray *marr = [NSMutableArray arrayWithCapacity:self.subViewControllers.count];
+	for (UIViewController *controller in self.subViewControllers) {
+		[marr addObject:[[BaseNavigationViewController alloc] initWithRootViewController:controller]];
+	}
+	[self setViewControllers:[marr copy]];
+}
 #pragma mark - private
 
 #pragma mark - getter / setter
 +(NSString *)storyboardId{
 	return @"HomeTabBarController";
+}
+
+-(NSArray<UIViewController *> *)subViewControllers{
+	if (_subViewControllers) {
+		return _subViewControllers;
+	}
+	_subViewControllers = @[[[HPMainViewController alloc] init], [[MEMainViewController alloc] init], [[MSMainViewController alloc] init]];
+	return _subViewControllers;
 }
 
 #pragma mark - layoutSubviews
