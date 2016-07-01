@@ -195,6 +195,7 @@
 		BAB993651D26053500B6CA2E /* MEMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MEMainViewController.m; sourceTree = "<group>"; };
 		BAB993671D26054000B6CA2E /* MSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMainViewController.h; sourceTree = "<group>"; };
 		BAB993681D26054000B6CA2E /* MSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMainViewController.m; sourceTree = "<group>"; };
+		BAB9936B1D263F4700B6CA2E /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
 		BAF95BC41D238C6E0089FB89 /* etonkids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = etonkids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF95BC81D238C6E0089FB89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAF95BD31D238C6E0089FB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -595,10 +596,10 @@
 				BAF95C1A1D2398C40089FB89 /* Macro */,
 				BAF95C161D2398BF0089FB89 /* Common */,
 				BAF95C0F1D2398B80089FB89 /* BaseClass */,
-				BAF95C211D2398D40089FB89 /* Tools */,
 				BAF95C1D1D2398CD0089FB89 /* Modules */,
 				BAF95C0B1D2398B00089FB89 /* Application */,
 				BAF95E391D23C6CB0089FB89 /* BaseStoryboard */,
+				BAF95C211D2398D40089FB89 /* Tools */,
 				BAF95BD31D238C6E0089FB89 /* Assets.xcassets */,
 				BAF95BD81D238C6E0089FB89 /* Info.plist */,
 				BAF95BC71D238C6E0089FB89 /* Supporting Files */,
@@ -675,6 +676,7 @@
 				BAF95C1B1D2398C40089FB89 /* Etonkids.pch */,
 				BAF95C1C1D2398C40089FB89 /* Macros.h */,
 				BAF95D861D239EAE0089FB89 /* ThirdPart.h */,
+				BAB9936B1D263F4700B6CA2E /* Theme.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
@@ -698,7 +700,6 @@
 				BAF95DF41D23B1680089FB89 /* SegmentedView */,
 				BAF95DF31D23AA8E0089FB89 /* WNSwitchButton */,
 				BAF95DF21D23AA2C0089FB89 /* WNPhotoPickerAndCroper */,
-				BAF95DF11D23AA060089FB89 /* XYString */,
 				BAF95DF01D23A9D80089FB89 /* WNSearchCotroller */,
 				BAF95DEF1D23A9CC0089FB89 /* MD5Helper */,
 				BAF95DEE1D23A9BB0089FB89 /* HYBTextView */,
@@ -714,9 +715,7 @@
 				BAF95C801D239C460089FB89 /* MLEmojiLabel */,
 				BAF95CD71D239C460089FB89 /* QRCodeGenerator */,
 				BAF95CDD1D239C460089FB89 /* SDPhotoBrowser */,
-				BAF95CE51D239C460089FB89 /* SDRefeshView */,
 				BAF95CEC1D239C460089FB89 /* SSKeychain */,
-				BAF95CF11D239C460089FB89 /* TimeLine */,
 				BAF95CFF1D239C460089FB89 /* TreeTableView */,
 				BAF95D0F1D239C460089FB89 /* UMessage_Sdk_1.3.0 */,
 				BAF95D141D239C460089FB89 /* VPImageCropper */,
@@ -913,13 +912,6 @@
 			path = SDPhotoBrowser;
 			sourceTree = "<group>";
 		};
-		BAF95CE51D239C460089FB89 /* SDRefeshView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SDRefeshView;
-			sourceTree = "<group>";
-		};
 		BAF95CEC1D239C460089FB89 /* SSKeychain */ = {
 			isa = PBXGroup;
 			children = (
@@ -929,117 +921,6 @@
 				BAF95CF01D239C460089FB89 /* SSKeychainQuery.m */,
 			);
 			path = SSKeychain;
-			sourceTree = "<group>";
-		};
-		BAF95CF11D239C460089FB89 /* TimeLine */ = {
-			isa = PBXGroup;
-			children = (
-				BAF95CF21D239C460089FB89 /* BaseClasses */,
-				BAF95CF41D239C460089FB89 /* GloabalDefines */,
-				BAF95CF51D239C460089FB89 /* Model */,
-				BAF95CF61D239C460089FB89 /* TimeLineController */,
-				BAF95CF71D239C460089FB89 /* Views */,
-			);
-			path = TimeLine;
-			sourceTree = "<group>";
-		};
-		BAF95CF21D239C460089FB89 /* BaseClasses */ = {
-			isa = PBXGroup;
-			children = (
-				BAF95CF31D239C460089FB89 /* BaseRefreshView */,
-			);
-			path = BaseClasses;
-			sourceTree = "<group>";
-		};
-		BAF95CF31D239C460089FB89 /* BaseRefreshView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BaseRefreshView;
-			sourceTree = "<group>";
-		};
-		BAF95CF41D239C460089FB89 /* GloabalDefines */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GloabalDefines;
-			sourceTree = "<group>";
-		};
-		BAF95CF51D239C460089FB89 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		BAF95CF61D239C460089FB89 /* TimeLineController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TimeLineController;
-			sourceTree = "<group>";
-		};
-		BAF95CF71D239C460089FB89 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				BAF95CF81D239C460089FB89 /* Cell */,
-				BAF95CF91D239C460089FB89 /* CommentView */,
-				BAF95CFA1D239C460089FB89 /* HeaderView */,
-				BAF95CFB1D239C460089FB89 /* OperationMenu */,
-				BAF95CFC1D239C460089FB89 /* PhotoContainer */,
-				BAF95CFD1D239C460089FB89 /* TimeLineRefreshFooter */,
-				BAF95CFE1D239C460089FB89 /* TimeLineRefreshHeader */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		BAF95CF81D239C460089FB89 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		BAF95CF91D239C460089FB89 /* CommentView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CommentView;
-			sourceTree = "<group>";
-		};
-		BAF95CFA1D239C460089FB89 /* HeaderView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = HeaderView;
-			sourceTree = "<group>";
-		};
-		BAF95CFB1D239C460089FB89 /* OperationMenu */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OperationMenu;
-			sourceTree = "<group>";
-		};
-		BAF95CFC1D239C460089FB89 /* PhotoContainer */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PhotoContainer;
-			sourceTree = "<group>";
-		};
-		BAF95CFD1D239C460089FB89 /* TimeLineRefreshFooter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TimeLineRefreshFooter;
-			sourceTree = "<group>";
-		};
-		BAF95CFE1D239C460089FB89 /* TimeLineRefreshHeader */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = TimeLineRefreshHeader;
 			sourceTree = "<group>";
 		};
 		BAF95CFF1D239C460089FB89 /* TreeTableView */ = {
@@ -1088,6 +969,8 @@
 		BAF95D851D239C4F0089FB89 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				BAF95D221D239C460089FB89 /* XYString.h */,
+				BAF95D231D239C460089FB89 /* XYString.m */,
 				BAF95D121D239C460089FB89 /* Utilities.h */,
 				BAF95D131D239C460089FB89 /* Utilities.m */,
 				BAF95C4E1D239C460089FB89 /* CommonTools.h */,
@@ -1198,15 +1081,6 @@
 				BAF95CAA1D239C460089FB89 /* NSString+Spell.m */,
 			);
 			name = WNSearchCotroller;
-			sourceTree = "<group>";
-		};
-		BAF95DF11D23AA060089FB89 /* XYString */ = {
-			isa = PBXGroup;
-			children = (
-				BAF95D221D239C460089FB89 /* XYString.h */,
-				BAF95D231D239C460089FB89 /* XYString.m */,
-			);
-			name = XYString;
 			sourceTree = "<group>";
 		};
 		BAF95DF21D23AA2C0089FB89 /* WNPhotoPickerAndCroper */ = {

@@ -27,11 +27,7 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	// Do any additional setup after loading the view.
-	DDLogInfo(@"%@", self.viewControllers);
-	DDLogInfo(@"%@", self.tabBar.items);
 	[self setupViewControllers];
-	DDLogInfo(@"%@", self.viewControllers);
-	DDLogInfo(@"%@", self.tabBar.items);
 }
 
 - (void)didReceiveMemoryWarning {

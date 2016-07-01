@@ -143,7 +143,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="6L5-gM-PK1"/>
                 </viewController>
@@ -253,6 +253,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="byp-hi-Uo0"/>
+        <segue reference="831-P1-z2W"/>
     </inferredMetricsTieBreakers>
 </document>
