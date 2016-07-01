@@ -16,6 +16,8 @@
 
 @property (nonatomic, strong) NSArray <UIViewController *> *subViewControllers;
 
+@property (nonatomic, copy) NSArray <NSString *> *storyboardNames;
+
 @end
 
 @implementation HomeTabBarController
@@ -43,11 +45,7 @@
 
 #pragma mark - view event & action
 -(void)setupViewControllers{
-	NSMutableArray *marr = [NSMutableArray arrayWithCapacity:self.subViewControllers.count];
-	for (UIViewController *controller in self.subViewControllers) {
-		[marr addObject:[[BaseNavigationViewController alloc] initWithRootViewController:controller]];
-	}
-	[self setViewControllers:[marr copy]];
+	[self setViewControllers:self.subViewControllers];
 }
 #pragma mark - private
 
@@ -60,8 +58,20 @@
 	if (_subViewControllers) {
 		return _subViewControllers;
 	}
-	_subViewControllers = @[[[HPMainViewController alloc] init], [[MEMainViewController alloc] init], [[MSMainViewController alloc] init]];
+	NSMutableArray *marr = [NSMutableArray arrayWithCapacity:self.storyboardNames.count];
+	for (NSString *storyboardName in self.storyboardNames) {
+		[marr addObject:[[UIStoryboard storyboardWithName:storyboardName bundle:nil] instantiateInitialViewController]];
+	}
+	_subViewControllers = [marr copy];
 	return _subViewControllers;
+}
+
+-(NSArray<NSString *> *)storyboardNames{
+	if (_storyboardNames) {
+		return _storyboardNames;
+	}
+	_storyboardNames = @[@"HomePage", @"MoreService", @"Me"];
+	return _storyboardNames;
 }
 
 #pragma mark - layoutSubviews

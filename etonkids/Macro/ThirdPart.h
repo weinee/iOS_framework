@@ -19,4 +19,6 @@
 #import "AFHTTPRequestOperationManager.h"
 #import "MBHttpProgressHUD.h"
 #import "Masonry.h"
+
+#import "UIView+Util.h"
 #endif /* ThirdPart_h */

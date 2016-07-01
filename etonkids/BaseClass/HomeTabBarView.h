@@ -27,7 +27,7 @@
 @property (nonatomic, strong)UIImageView* imageView;
 @property (nonatomic, strong)UILabel* labelTitle;
 @property (nonatomic,strong) UILabel *badgeView;
-@property (nonatomic) Boolean selected;
+@property (nonatomic) BOOL selected;
 
 -(instancetype)initWithFrame:(CGRect)frame andSelectedImage:(UIImage *)seletctedImage unSelectedImage:(UIImage *) unSelectedImage andTitle:(NSString *) title;
 
@@ -38,7 +38,7 @@
 @property (nonatomic, strong) NSArray<HomeTabBarItem *> * items;
 
 -(instancetype)initWithDelegate:(id<HomeTabBarItemDelegate>) delegate andSelectedImages:(NSArray <UIImage *> *)selectedImages unSelectedImages:(NSArray <UIImage *> *) unSelectedImages titles:(NSArray<NSString *>*) titles;
--(void)selectIndex:(int)tabIndex;
+-(void)selectAtIndex:(NSInteger)tabIndex;
 
 -(void)setupUI;
 @property id<HomeTabBarItemDelegate> delegate ;

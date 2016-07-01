@@ -93,7 +93,7 @@
 	return _badgeView;
 }
 
--(void)setSelected:(Boolean)selected{
+-(void)setSelected:(BOOL)selected{
 	_selected = selected;
 	if (_selected) {
 		self.imageView.image = _selectedImage;
@@ -122,6 +122,7 @@
 	if(self){
 		self.delegate = delegate;
 		self.frame = CGRectMake(0, 0, kScreenWidth, 49);
+		self.backgroundColor = [UIColor whiteColor];
     
 		_arrayUnselected = unSelectedImages;
 		_arraySelected = selectedImages;
@@ -141,6 +142,8 @@
 			[self addSubview:item];
 		}
 		self.items = [marr copy];
+		
+		[self selectAtIndex:0];
 		[self setupUI];
 	}
 	return self;
@@ -152,7 +155,7 @@
 
 -(void)setupUI{
   
-  UIView* sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 0.5f)];
+  UIView* sep = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.frame.size.width, 1.3f)];
   sep.backgroundColor = kColorSplitLine;
   [self addSubview:sep];
   
@@ -167,7 +170,7 @@
 	
 }
 
--(void)selectIndex:(int)tabIndex{
+-(void)selectAtIndex:(NSInteger)tabIndex{
 	for (UIView *subView in self.subviews) {
 		if ([subView isKindOfClass:[HomeTabBarItem class]]) {
 			HomeTabBarItem *item = (HomeTabBarItem *)subView;
@@ -190,7 +193,7 @@
 -(void)touchUpInside_gesture:(UIGestureRecognizer*)sender{
   HomeTabBarItem* item = (HomeTabBarItem*)sender.view;
   if(self.delegate && [self.delegate respondsToSelector:@selector(homeTabBarItem:touchedIndex:)]){
-    [self.delegate homeTabBarItem:item touchedIndex:item.tag];
+		[self.delegate homeTabBarItem:item touchedIndex:item.tag - 1];
   }
 }
 

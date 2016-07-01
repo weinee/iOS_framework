@@ -8,11 +8,13 @@
 
 #import "BaseViewController.h"
 
-@interface BaseViewController ()
+@interface BaseViewController () <HomeTabBarItemDelegate>
 
-@property (nonatomic, strong) NSArray <NSString *> *selectedImages;
+@property (nonatomic, strong) NSArray <UIImage *> *selectedImages;
 
-@property (nonatomic, strong) NSArray <NSString *> *unSelectedImages;
+@property (nonatomic, strong) NSArray <UIImage *> *unSelectedImages;
+
+@property (nonatomic, strong) NSArray <NSString *> *titles;
 
 @end
 
@@ -23,6 +25,7 @@
 #pragma mark - override
 - (void)viewDidLoad {
 	[super viewDidLoad];
+	self.hiddenTabBarView = YES;
 	// Do any additional setup after loading the view.
 }
 
@@ -31,11 +34,41 @@
 	// Dispose of any resources that can be recreated.
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+	[super viewWillAppear:animated];
+	
+	[self updateViewConstraints];
+}
+
+-(void)updateViewConstraints{
+	if (!self.hiddenTabBarView) {
+		[self.view addSubview:self.homeTabBarView];
+		__weak typeof (self) ws = self;
+		[self.homeTabBarView mas_makeConstraints:^(MASConstraintMaker *make) {
+			make.left.equalTo(ws.view.mas_left).offset(0);
+			make.right.equalTo(ws.view.mas_right).offset(0);
+			make.bottom.equalTo(ws.view.mas_bottom).offset(0);
+			make.height.mas_equalTo(49);
+		}];
+	}
+	
+	[super updateViewConstraints];
+}
+
 #pragma mark - api
 
 #pragma mark - model event
 
 #pragma mark - view event & action
+#pragma mark HomeTabBarItemDelegate
+-(void)homeTabBarItem:(HomeTabBarItem *)tabBarItem touchedIndex:(NSInteger)index{
+	if (index == self.tabBarController.selectedIndex) {
+		return;
+	}
+	BaseViewController *controller = (BaseViewController *)(((UINavigationController *)self.tabBarController.viewControllers[index]).visibleViewController);
+	[controller.homeTabBarView selectAtIndex:index];
+	self.tabBarController.selectedIndex = index;
+}
 
 #pragma mark - private
 
@@ -44,20 +77,36 @@
 	return @"BaseViewController";
 }
 
--(NSArray<NSString *> *)selectedImages{
+-(NSArray<UIImage *> *)selectedImages{
 	if (_selectedImages) {
 		return _selectedImages;
 	}
-	_selectedImages = @[@"icon_menu_home1", @"icon_menu_more1", @"icon_menu_me1"];
+	_selectedImages = @[[UIImage imageNamed:@"icon_menu_home1"], [UIImage imageNamed: @"icon_menu_more1"], [UIImage imageNamed:@"icon_menu_me1"]];
 	return _selectedImages;
 }
 
--(NSArray<NSString *> *)unSelectedImages{
+-(NSArray<UIImage *> *)unSelectedImages{
 	if (_unSelectedImages) {
 		return _unSelectedImages;
 	}
-	_unSelectedImages = @[@"icon_menu_home0", @"icon_menu_more0", @"icon_menu_me0"];
+	_unSelectedImages =@[[UIImage imageNamed:@"icon_menu_home0"], [UIImage imageNamed: @"icon_menu_more0"], [UIImage imageNamed:@"icon_menu_me0"]];
 	return _unSelectedImages;
+}
+
+-(NSArray<NSString *> *)titles{
+	if (_titles) {
+		return _titles;
+	}
+	_titles = @[@"Etonkids", @"更多服务", @"我的"];
+	return _titles;
+}
+
+-(HomeTabBarView *)homeTabBarView{
+	if (_homeTabBarView) {
+		return _homeTabBarView;
+	}
+	_homeTabBarView = [[HomeTabBarView alloc] initWithDelegate:self andSelectedImages:self.selectedImages unSelectedImages:self.unSelectedImages titles:self.titles];
+	return _homeTabBarView;
 }
 #pragma mark - layoutSubviews
 

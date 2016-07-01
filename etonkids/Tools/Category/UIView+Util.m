@@ -45,4 +45,14 @@
     return blurImage;
 }
 */
+
+- (void)wn_addSubviews:(NSArray *)subviews
+{
+	[subviews enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL *stop) {
+		if ([view isKindOfClass:[UIView class]]) {
+			[self addSubview:view];
+		}
+	}];
+}
+
 @end

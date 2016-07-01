@@ -16,4 +16,7 @@
 - (UIImage *)convertViewToImage;
 //- (UIImage *)updateBlur;
 
+/** 添加一组子view  */
+- (void)wn_addSubviews:(NSArray *)subviews;
+
 @end
