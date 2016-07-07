@@ -85,10 +85,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqJ-Co-p0J">
-                                <rect key="frame" x="124" y="203" width="60" height="30"/>
-                                <state key="normal" title="立即加入"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VeX-Uh-CVN">
                                 <rect key="frame" x="146" y="263" width="30" height="30"/>
                                 <state key="normal" title="登录"/>
@@ -99,6 +95,10 @@
                                 <connections>
                                     <action selector="cancelRegist:" destination="6fN-XD-qqG" eventType="touchUpInside" id="G9W-xk-6VQ"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OqJ-Co-p0J">
+                                <rect key="frame" x="131" y="208" width="60" height="30"/>
+                                <state key="normal" title="立即加入"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -122,7 +122,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="spZ-oe-5lb">
-                                <rect key="frame" x="160" y="191" width="30" height="30"/>
+                                <rect key="frame" x="149" y="204" width="30" height="30"/>
                                 <state key="normal" title="登录"/>
                                 <connections>
                                     <action selector="clickLoginBtn:" destination="MYt-kQ-pGH" eventType="touchUpInside" id="h0o-4s-W1C"/>
@@ -136,7 +136,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezI-ic-kAB">
-                                <rect key="frame" x="238" y="264" width="60" height="30"/>
+                                <rect key="frame" x="216" y="264" width="60" height="30"/>
                                 <state key="normal" title="立即加入"/>
                                 <connections>
                                     <segue destination="6fN-XD-qqG" kind="presentation" id="831-P1-z2W"/>

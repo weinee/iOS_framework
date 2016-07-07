@@ -196,6 +196,7 @@
 		BAB993671D26054000B6CA2E /* MSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMainViewController.h; sourceTree = "<group>"; };
 		BAB993681D26054000B6CA2E /* MSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMainViewController.m; sourceTree = "<group>"; };
 		BAB9936B1D263F4700B6CA2E /* Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Theme.h; sourceTree = "<group>"; };
+		BAB994121D29EB0300B6CA2E /* Constan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constan.h; sourceTree = "<group>"; };
 		BAF95BC41D238C6E0089FB89 /* etonkids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = etonkids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAF95BC81D238C6E0089FB89 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BAF95BD31D238C6E0089FB89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -478,8 +479,8 @@
 		BAB992401D23DEA600B6CA2E /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				BAB992411D23DEA600B6CA2E /* Login.storyboard */,
 				BAB992491D23DEAA00B6CA2E /* ViewController */,
+				BAB992411D23DEA600B6CA2E /* Login.storyboard */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -677,6 +678,7 @@
 				BAF95C1C1D2398C40089FB89 /* Macros.h */,
 				BAF95D861D239EAE0089FB89 /* ThirdPart.h */,
 				BAB9936B1D263F4700B6CA2E /* Theme.h */,
+				BAB994121D29EB0300B6CA2E /* Constan.h */,
 			);
 			path = Macro;
 			sourceTree = "<group>";
