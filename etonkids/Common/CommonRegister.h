@@ -13,6 +13,7 @@
 #import <CocoaLumberjack/CocoaLumberjack.h>
 //根据情况开启不同的级别
 #ifdef DEBUG
+#import "FLEXManager.h"
 static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
 #else
 static const DDLogLevel ddLogLevel = DDLogLevelWarn;
@@ -47,5 +48,9 @@ typedef void(^NetwordReachability)(AFNetworkReachabilityStatus status);
 
 /** 统一样式*/
 -(void)registApperance;
+
+#if DEBUG
+-(void)registFLEX;
+#endif
 
 @end

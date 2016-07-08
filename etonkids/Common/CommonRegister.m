@@ -36,6 +36,9 @@ static CommonRegister *sharedRegister;
 	[self registCocoaLumberjackLog];
 	[self registReachabilityNotify];
 	[self registApperance];
+#if DEBUG
+	[self registFLEX];
+#endif
 }
 
 -(AFNetworkReachabilityStatus)currentNetworkStatus{
@@ -100,6 +103,23 @@ static CommonRegister *sharedRegister;
 								   [[UIMenuItem alloc] initWithTitle:@"删除" action:NSSelectorFromString(@"deleteObject:")]
 								   ]];
 }
+
+#if DEBUG
+-(void)registFLEX{
+	// 在window上添加一个打开flexManager的按钮
+	UIButton *openFlexManagerBtn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+	openFlexManagerBtn.frame = CGRectMake(0, kScreenHeight - 20, 40, 20);
+	[openFlexManagerBtn setTitle:@"FLEX" forState:UIControlStateNormal];
+	[openFlexManagerBtn addTarget:self action:@selector(openFlexManager) forControlEvents:UIControlEventTouchUpInside];
+	[[UIApplication sharedApplication].keyWindow addSubview:openFlexManagerBtn];
+}
+
+-(void) openFlexManager{
+	// This could also live in a handler for a keyboard shortcut, debug menu item, etc.
+	
+	[[FLEXManager sharedManager] showExplorer];
+}
+#endif
 
 #pragma mark getter/setter
 -(NetwordReachability)networkReachability{

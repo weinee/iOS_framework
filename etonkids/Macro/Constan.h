@@ -9,13 +9,11 @@
 #ifndef Constan_h
 #define Constan_h
 /** app key*/
-//oneapm 性能监控
-#define appkey_oneapm @"ADACCA9E4AA5AFE7D7C5594BFB6E039076"
+UIKIT_EXTERN NSString *const appkey_oneapm;
+UIKIT_EXTERN NSString *const BMKKEY;
+UIKIT_EXTERN NSString *const noFirstLunched;
 
-//百度地图key
-#define BMKKEY @"QlieoECYSow6LYphIAVVt25DDw71pGz1"
 
-/** 通用*/
 //图片压缩比例
 #define Image_compression 0.3f
 //长文本长度限制

@@ -17,7 +17,20 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-	// Override point for customization after application launch.
+	// Override point for customization after application
+	self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+	[self.window makeKeyAndVisible];
+	NSUserDefaults *defalut = [NSUserDefaults standardUserDefaults];
+	if ([defalut boolForKey:noFirstLunched]) {
+		UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+		UIViewController *controller = mainStoryboard.instantiateInitialViewController;
+		self.window.rootViewController = controller;
+	} else {
+		[defalut setBool:YES forKey:noFirstLunched];
+		UIStoryboard *loginStoryboard = [UIStoryboard storyboardWithName:@"Login" bundle:nil];
+		UIViewController *controller = loginStoryboard.instantiateInitialViewController;
+		self.window.rootViewController = controller;
+	}
 	
 	[[CommonRegister shareRegister] templateRegist];
 	
