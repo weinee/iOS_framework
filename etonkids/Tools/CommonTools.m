@@ -8,7 +8,6 @@
 
 #import "CommonTools.h"
 #import "NSString+Spell.h"
-#import "UIImage+HeadImage.h"
 #import "UIImageView+WebCache.h"
 
 @implementation CommonTools
@@ -73,18 +72,6 @@
 	return dic;
 }
 
-+(void)setImageForAvatar:(UIImageView *)avatar withUsername:(NSString *)username backColor:(UIColor *)color url:(NSString *)url{
-	username = username.length > 1 ? [username substringFromIndex:username.length - 2] : username;
-	
-	UIImage *placehloder = [UIImage creatAvatarWithUsername:username frame:CGRectMake(0, 0, 60, 60) backColor:color fontSize:15];
-	if (url) {
-		NSURL *URL = [NSURL URLWithString:url];
-		[avatar sd_setImageWithURL:URL placeholderImage:placehloder];
-	} else{
-		avatar.image = placehloder;
-	}
-}
-
 +(NSData *)archivedWithObject:(id)obj{
 	if (!obj) {
 		return nil;
@@ -98,5 +85,49 @@
 		return nil;
 	}
 	return [NSKeyedUnarchiver unarchiveObjectWithData:data];
+}
+
+
++(BOOL)locationServiceIsOpen{
+	BOOL canUser = NO;
+	CLAuthorizationStatus currentStatus = [CLLocationManager authorizationStatus];
+	if (CurrentVersion >= 8) {
+		canUser = currentStatus == kCLAuthorizationStatusAuthorizedAlways || currentStatus == kCLAuthorizationStatusNotDetermined || currentStatus == kCLAuthorizationStatusAuthorizedWhenInUse;
+	} else {
+		canUser = currentStatus == kCLAuthorizationStatusAuthorized || currentStatus == kCLAuthorizationStatusNotDetermined;
+	}
+	if ([CLLocationManager locationServicesEnabled] && canUser) {
+		return YES;
+	}
+	return NO;
+}
+
++(void)locationServiceIsOpen:(void (^)())alreadySetting toSettingLocationService:(void (^)())beforeSetting{
+	// 判断定位是否开启
+	if ([CommonTools locationServiceIsOpen]) {
+		if (alreadySetting) {
+			alreadySetting();
+		}
+	} else {
+		// 提示用户是否开启定位服务
+		CXAlertView *alertView = [[CXAlertView alloc] initWithTitle:@"提示" message:@"当前没有开启定位服务，是否去设置！" cancelButtonTitle:@"取消"];
+		[alertView addButtonWithTitle:@"去设置" type:CXAlertViewButtonTypeCustom handler:^(CXAlertView *alertView, CXAlertButtonItem *button) {
+			
+			if (beforeSetting) {
+				beforeSetting();
+			}
+			[alertView dismiss];
+			/** 跳转到设置定位服务的页面*/
+			NSURL * url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+			//			NSLog(@"%@", UIApplicationOpenSettingsURLString);
+			if([[UIApplication sharedApplication] canOpenURL:url]) {
+				
+				//				NSURL*url =[NSURL URLWithString:UIApplicationOpenSettingsURLString];
+				[[UIApplication sharedApplication] openURL:url];
+				
+			}
+		}];
+		[alertView show];
+	}
 }
 @end

@@ -43,7 +43,7 @@
 +(void) showErrorView:(NSString *)message;
 
 /** 没有网络连接*/
-+(void) showNotReachableView:(CXAlertButtonHandler) handler;
+//+(void) showNotReachableView:(CXAlertButtonHandler) handler;
 
 +(UIImage *)cutFromImage:(UIImage *)image inRect:(CGRect)rect;
 
@@ -96,7 +96,7 @@
 +(NSMutableDictionary *)getAllDaysOfYear:(NSInteger)year ofMonth:(NSInteger)month;
 
 /**更新新版本*/
-+(void)updateApp;
-+(void)autoUpdateApp;
+//+(void)updateApp;
+//+(void)autoUpdateApp;
 
 @end

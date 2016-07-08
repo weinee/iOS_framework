@@ -46,12 +46,15 @@
  */
 +(NSMutableDictionary *)getModelDicFromArray:(NSArray <NSObject*>*) array byModelKeypath:(NSString *)keypath sortByKeyPath:(NSString *)sortKeypath asc:(BOOL) asc;
 
-
-+(void) setImageForAvatar:(UIImageView *)avatar withUsername:(NSString *)username backColor:(UIColor *)color url:(NSString *)url;
-
 /** 归档*/
 +(NSData *)archivedWithObject:(id)obj;
 
 /** 解档*/
 +(id)unarchivedWithData:(NSData *)data;
+
+/** 判断是否开启定位服务*/
++(BOOL)locationServiceIsOpen;
+
+/** 判断定位服务是否开启，已经开启执行alreadySeting,否者寻味是否去设置，是的话执行beforeSetting并且跳转到设置页面*/
++(void)locationServiceIsOpen:(void(^)()) alreadySetting toSettingLocationService:(void(^)()) beforeSetting;
 @end

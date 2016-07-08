@@ -8,7 +8,6 @@
 
 #import "Utilities.h"
 #import <CommonCrypto/CommonDigest.h>
-#import "SSKeychain.h"
 
 @implementation Utilities
 
@@ -166,22 +165,22 @@
     }
 }
 
-+(void) showErrorView:(NSString *)message{
-    CXAlertView *alert = [[CXAlertView alloc] initWithTitle:NSLocalizedString(@"错误", @"错误") message:message cancelButtonTitle:NSLocalizedString(@"确定", @"OK") ];
-    [alert show];
-}
+//+(void) showErrorView:(NSString *)message{
+//    CXAlertView *alert = [[CXAlertView alloc] initWithTitle:NSLocalizedString(@"错误", @"错误") message:message cancelButtonTitle:NSLocalizedString(@"确定", @"OK") ];
+//    [alert show];
+//}
 
-+(void) showNotReachableView:(CXAlertButtonHandler) handler{
-	CXAlertView *alert = [[CXAlertView alloc] initWithTitle:NSLocalizedString(@"错误", @"错误") message:@"请检查联网状态！" cancelButtonTitle:nil ];
-	[alert addButtonWithTitle:NSLocalizedString(@"确定", @"OK") type:CXAlertViewButtonTypeCancel handler:handler];
-	
-	[alert show];
-}
+//+(void) showNotReachableView:(CXAlertButtonHandler) handler{
+//	CXAlertView *alert = [[CXAlertView alloc] initWithTitle:NSLocalizedString(@"错误", @"错误") message:@"请检查联网状态！" cancelButtonTitle:nil ];
+//	[alert addButtonWithTitle:NSLocalizedString(@"确定", @"OK") type:CXAlertViewButtonTypeCancel handler:handler];
+//	
+//	[alert show];
+//}
 
-+(void) showInfoView:(NSString *)message{
-    CXAlertView *alert = [[CXAlertView alloc] initWithTitle:NSLocalizedString(@"信息", @"信息") message:message cancelButtonTitle:NSLocalizedString(@"确定", @"OK") ];
-    [alert show];
-}
+//+(void) showInfoView:(NSString *)message{
+//    CXAlertView *alert = [[CXAlertView alloc] initWithTitle:NSLocalizedString(@"信息", @"信息") message:message cancelButtonTitle:NSLocalizedString(@"确定", @"OK") ];
+//    [alert show];
+//}
 
 +(UIImage *)cutFromImage:(UIImage *)image inRect:(CGRect)rect {
     CGImageRef sourceImageRef = [image CGImage];
@@ -440,27 +439,27 @@
     return [emailTest evaluateWithObject:email];
 }
 
-+(NSString *) GetIOSUUID
-{
-    NSString *sRetUUID;
-    
-    NSString *retrieveuuid = [SSKeychain passwordForService:@"com.ytdinfo.hongtu" account:@"uuid"];
-    if ( retrieveuuid == nil || [retrieveuuid isEqualToString:@""])
-    {
-        CFUUIDRef uuid = CFUUIDCreate(NULL);
-        assert(uuid != NULL);
-        CFStringRef uuidStr = CFUUIDCreateString(NULL, uuid);
-        retrieveuuid = [NSString stringWithFormat:@"%@", uuidStr];
-        [SSKeychain setPassword: retrieveuuid
-                     forService:@"com.ytdinfo.hongtu" account:@"uuid"];
-    }
-    if (retrieveuuid != nil)
-    {
-        sRetUUID = [NSString stringWithUTF8String:[retrieveuuid UTF8String]];
-    }
-    
-    return sRetUUID;
-}
+//+(NSString *) GetIOSUUID
+//{
+//    NSString *sRetUUID;
+//    
+//    NSString *retrieveuuid = [SSKeychain passwordForService:@"com.ytdinfo.hongtu" account:@"uuid"];
+//    if ( retrieveuuid == nil || [retrieveuuid isEqualToString:@""])
+//    {
+//        CFUUIDRef uuid = CFUUIDCreate(NULL);
+//        assert(uuid != NULL);
+//        CFStringRef uuidStr = CFUUIDCreateString(NULL, uuid);
+//        retrieveuuid = [NSString stringWithFormat:@"%@", uuidStr];
+//        [SSKeychain setPassword: retrieveuuid
+//                     forService:@"com.ytdinfo.hongtu" account:@"uuid"];
+//    }
+//    if (retrieveuuid != nil)
+//    {
+//        sRetUUID = [NSString stringWithUTF8String:[retrieveuuid UTF8String]];
+//    }
+//    
+//    return sRetUUID;
+//}
 
 +(AFHTTPRequestOperationManager *)defaultHttpRequestManager{
   AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
@@ -510,13 +509,13 @@
 
 
 +(void)updateApp{
-  if ([CommonRegister shareRegister].currentNetworkStatus == AFNetworkReachabilityStatusNotReachable) {
-    [Utilities showErrorView:@"您的网络不可用，无法进行系统版本检测，请检查您的网络设置."];
-    return;
-  }
-  
-  [MBHttpProgressHUD processBeginInView:[UIApplication sharedApplication].keyWindow];
-  
+//  if ([CommonRegister shareRegister].currentNetworkStatus == AFNetworkReachabilityStatusNotReachable) {
+//    [Utilities showErrorView:@"您的网络不可用，无法进行系统版本检测，请检查您的网络设置."];
+//    return;
+//  }
+//  
+//  [MBHttpProgressHUD processBeginInView:[UIApplication sharedApplication].keyWindow];
+	
 //  NSString *nowVersion = [CommonSettings currentVersion];
 //  AFHTTPRequestOperationManager *manager = [Utilities defaultHttpRequestManager];
 //  NSDictionary *parameters = @{@"devicetype":@"ios"};

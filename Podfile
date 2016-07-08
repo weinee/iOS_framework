@@ -20,3 +20,5 @@ pod 'SDAutoLayout', '~> 2.1.2'
 pod 'IQKeyboardManager', '~> 3.3.7'
 pod 'TMCache'
 pod 'FLEX', '~> 2.0', :configurations => ['Debug']
+pod 'TZImagePickerController' #图片选择
+pod 'IMYWebView'
